@@ -1,0 +1,138 @@
+<!--
+
+REGRAS DA TELA DE CONTRATAÇÃO
+
+* Botão finalizar contratação deve ficar inativo. Sendo que para ficar ativo, o usuário precisa aceitar o contrato.
+* O bloco de pagamento so deve expandir após a o aceite do contrato .
+
+
+-->
+
+<!--MODAL CONFIRMAR CONTRATACAO-->
+<div class="modal fade" id="ModalConfirmacaoPagamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Contratação</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body etapa1">
+				<h3><strong></strong></h3>
+				<div class="accordion">
+					<div class="card">
+						<div class="card-header" id="headingOne" style="background-color: rgb(249 249 249);padding:.25rem;">
+						  <h2 class="mb-0">
+							<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#informacoes" aria-expanded="true" aria-controls="collapseOne">
+								<strong>Informações do seu pacote</strong>
+							</button>
+						  </h2>
+						</div>
+						<div id="informacoes" class="collapse  show" aria-labelledby="headingOne">
+							<div class="card-body">
+								<div class="caixa-subconteudo">
+									<h3>IaaS TI - Pacote Fit</h3>
+									<p>	0 estações / 0 servidores /  16 serviços</p>
+									<p><strong>Cliente:</strong> 0000 - Nome do cliente</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion">
+						<div class="card">
+							<div class="card-header" id="headingOne" style="background-color: rgb(249 249 249);padding:.25rem;">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#contrato" aria-expanded="true" aria-controls="collapseOne">
+									<strong>Contrato</strong>
+								</button>
+							  </h2>
+							</div>
+							<div id="contrato" class="collapse  show" aria-labelledby="headingOne">
+								<div class="card-body">
+									<div class="caixa-subconteudo">
+										<p>Role o contrato até o fim para aceitar.</p>
+										<div class="contrato-caixa">
+											<iframe src="http://areadocliente.mastermaq.com.br/politicas/uso-politicas-privacidade.htm" width="100%" height="100%"></iframe>
+										</div>
+										<label class="checkbox-inline" for="checkboxes-0">
+											<input type="checkbox" name="checkboxes" id="checkboxes-0" value="1" data-toggle="collapse" data-target="#pagamento">
+											Eu li e concordo os termos do contrato.
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo" style="background-color: rgb(249 249 249);padding:.25rem;">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#pagamento" aria-expanded="false" aria-controls="collapseTwo">
+								  <strong>Pagamento</strong>
+								</button>
+							  </h2>
+							</div>
+							<div id="pagamento" class="collapse" aria-labelledby="headingTwo">
+								<div class="card-body">
+									<div class="caixa-subconteudo">
+										<h3>Adesão</h3>
+										<p><strong>Valor:</strong> R$ 0,<small>00</small></p>
+										<p>Selecione a forma de pagamento:</p>
+										<!--Forma de pagamento-->
+										<label class="radio-inline mr-3" for="radios-0">
+											<input type="radio" name="radios" id="radios-0" value="1"  checked="checked">
+											Boleto
+										</label>
+										<label class="radio-inline" for="radios-0">
+											<input type="radio" name="radios" id="radios-0" value="1">
+											Cartão de crédito
+										</label>
+										<!--Fim Forma de pagamento-->
+										<!--Boleto-->
+										<div class="pagamento-boleto">
+											<p>1x no boleto, com vencimento para o dia 
+												<select class="form-control form-control-sm form-inline" style="width:10%;display: inline-block;">
+													<option>5</option>
+												</select>.
+											</p>
+											<p><i class="fas fa-info-circle"></i> O acesso ao pacote contratado será liberado após o pagamento do boleto, no prazo de 3 dias úteis.</p>
+										</div>	
+										<!--Fim Boleto-->
+										<!--Boleto-->
+										<div class="pagamento-boleto hide">
+											<p>Formulário pagseguro ou pagar me</p>
+											<p><i class="fas fa-info-circle"></i> O acesso ao pacote contratado será liberado imediatamente após a confirmação de pagamento.</p>
+										</div>	
+										<!--Fim Boleto-->
+									</div>
+									<hr>	
+									<div class="caixa-subconteudo">
+										<h3>Mensalidade</h3>
+										<p><strong>Valor:</strong>  R$0,<small>00</small> / <strong>Forma de pagamento:</strong> Boleto bancário</p>
+										<p>Fidelidade de 12 meses.</p>
+										<p>O vencimento dos boletos é para todo dia
+											<select class="form-control form-control-sm form-inline" style="width:10%;display: inline-block;">
+												<option>5</option>
+											</select>.
+										</p>
+									</div>
+									<hr>										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-body etapa2" style="display:none;">
+				<p style="font-size:56px;color:#53b371;" class="text-center mb-1"><i class="far fa-check-circle"></i></p>
+				<p class="text-center"><strong>Contratação realizada com sucesso.</strong></p>
+				<p class="text-center">Foi enviado uma e-mail para [[EmailPrincipalPassaporte]], com detalhes da contratação e o boleto de adesão.</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-excluir btn-sm" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
+				<button type="button" class="btn btn-principal btn-sm" onclick="$('.etapa1').hide();$('.etapa2').show();$(this).prev().hide();$(this).hide();$(this).next().show()"><i class="fas fa-check"></i> Finalizar contratação</button>
+				<button class="btn btn-default btn-sm" style="display:none;" data-dismiss="modal"><i class="fas fa-times"></i> Fechar</button>
+			</div>
+		</div>
+	</div>
+</div>	
+<!--FIM MODAL CONFIRMAR CONTRATACAO-->

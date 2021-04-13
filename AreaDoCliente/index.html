@@ -1,0 +1,832 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	<title>Área do cliente Mastermaq </title>
+	<meta name="description" content="Padrões da área do cliente Mastermaq">
+	<meta name="author" content="Leandro Eustáquio SI - Mastermaq">
+
+	<!--ESTILOS-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css"> 
+	<link rel="stylesheet" href="assets/css/all.min.css"> 	
+	<link rel="stylesheet" href="http://padrao.mastermaq.com.br/css/cadu-atendimento.css">
+	<!--FIM ESTILOS-->
+
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script SRC="assets/JS/bootstrap.min.js"></script>
+	<!--FIM JQUERY-->
+
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand p-0" href="#">
+				<img src="assets/img/logo-mmq.png" width="35" class="d-inline-block align-middle" alt="" loading="lazy">
+				Área <strong>do cliente</strong>
+			</a>
+			<button class="navbar-toggler btn-principal-outline mr-3" type="button" data-toggle="collapse" data-target=".sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
+				<form class="col-xl-6 col-lg-6 col-12">
+					<select class="form-control mr-sm-0 cliente-selecionado">
+						<option>522195 - MAXCOR INDUSTRIA DE ETIQUETAS LTDA</option>
+						<option>121325 - TOMAZ CONTABILIDADE EIRELI</option>
+					</select>
+				</form>
+				<ul class="navbar-nav ml-auto content-end pr-4 pt-1">
+					<li class="nav-item active mr-lg-3" title="Ajuda do Cadu">
+						<button class="btn btn-secundario hide" onclick="$('.destaque').show();$(body).addClass('semscroll');"><i class="fas fa-question-circle"></i> Cadu</button>
+						<img src="assets/img/cadu.png" width="100">
+					</li>
+					<li class="nav-item mr-lg-2" title="Notificações importantes para você">
+						<button class="btn btn-principal" disabled><i class="fas fa-exclamation-triangle"></i> <small>0</small></button>
+					</li>
+					<li class="nav-item dropdown perfil">
+						<!--SEM FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="far fa-user"></i>
+						</a>
+						<!--FIM SEM FOTO-->
+						<!--FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto com-foto hide" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxJT_RLIY7HFPGg80dMCJt9nlafYiCEHnxRg&usqp=CAU');background-size:cover;">
+							
+						</a>
+						<!--FIM FOTO-->
+
+					
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <p class="vermelho mb-0 pr-1 pl-1 text-center" href="#"><Strong>Matheus Rocha Martins</strong></p>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#"><strong>Acessar passaporte</strong></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>	
+	<div class="container-fluid">
+		<div class="row">
+			<!--MENU LATERAL-->
+			<aside class="col-xl-2 col-lg-2 col-md-12 col-12 p-0 sidebar collapse">
+				<div class="menu-lateral sidebar-sticky">
+					<ul class="list-unstyled">
+						<li>
+							<a href="" class="ativo">
+								<img src="assets/img/menu-home.png" class="icone-normal"> 
+								<img src="assets/img/menu-home-ativo.png" class="icone-ativo"> Início
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-financeiro.png" class="icone-normal"> 
+								<img src="assets/img/menu-financeiro-ativo.png" class="icone-ativo"> Financeiro
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-informacoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-informacoes-ativo.png" class="icone-ativo"> Dados do cliente
+							</a>
+						</li>
+						<li>
+							<a href="sistemaseservicos.html" class="">
+								<img src="assets/img/menu-atendimento-servicos.png" class="icone-normal"> 
+								<img src="assets/img/menu-atendimento-servicos-ativo.png" class="icone-ativo"> Sistemas e serviços
+							</a>
+						</li>
+						<li>
+							<a href="sistemaseservicos.html" class="">
+								<img src="assets/img/menu-loja.png" class="icone-normal"> 
+								<img src="assets/img/menu-loja-ativo.png" class="icone-ativo"> Loja
+							</a>
+						</li>
+						<li style="padding-top:7px;">
+							<a href="sistemaseservicos.html" class="">
+								<img src="assets/img/menu-capacitacao.png" class="icone-normal pull-left"> 
+								<img src="assets/img/menu-capacitacao-ativo.png" class="icone-ativo pull-left"> 
+								<span style="
+									display: block;
+									/* float: left; */
+									margin-left: 40px;
+									margin-top: -35px;
+									margin-bottom: 0;
+									line-height:22px;
+								">Capacitação <br>e implantação</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="assets/img/menu-sugestoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-sugestoes-ativo.png" class="icone-ativo"> Painel de sugestões
+							</a>
+						</li>
+						
+					</ul>
+				</div>	
+			</aside>
+			<!--FIM MENU LATERAL-->
+			<!--CONTEUDO-->
+			<section class="col-xs-10 col-lg-10 col-md-12 col-12 ml-sm-auto meio">
+				<!--Banner-->
+				<div class="row banner hide">
+					<div class="col-xs-12 col-12">
+						<a href="">
+							<img src="assets/img/banner/Domo1.png">
+						</a>
+					</div>
+				</div>
+				<!--Fim Banner-->
+				<div class="row">
+					<div class="col-xl-12 col-12">
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Boletos em aberto</h2>
+							</div>
+							<div class="caixa-conteudo-descricao hmn100 hmx300">
+								<div class="table-responsive-xl">
+								<table class="table tabela1 table-xl">
+									<tr>
+										<th width="25%">Identificação</th>
+										<th width="25%">Vencimento</th>
+										<th width="15%" class="text-center">Valor</th>
+										<th></th>
+									</tr>
+									<tr>
+										<td>Sistemas</td>
+										<td  class="vermelho"><i class="fas fa-exclamation-circle"></i> 05/05/2020</td>
+										<td class="text-center">R$ 670,00</td>
+										<td class="text-leftr">
+											<button class="btn btn-principal-outline btn-sm"><i class="fas fa-print"></i> Imprimir</button>
+											<button class="btn btn-secundario-outline btn-sm"><i class="fas fa-check"></i> Confirmar pagamento</button>
+										</td>
+									</tr>
+									<tr>
+										<td>Sistemas</td>
+										<td>05/05/2020</td>
+										<td class="text-center">R$ 670,00</td>
+										<td class="text-left">
+											<button class="btn btn-principal-outline btn-sm"><i class="fas fa-print"></i> Imprimir</button>
+											<button class="btn btn-secundario-outline btn-sm hide"><i class="fas fa-check"></i> Confirmar pagamento</button>
+										</td>
+									</tr>
+									<tr>
+										<td>Sistemas</td>
+										<td>05/05/2020</td>
+										<td class="text-center">R$ 670,00</td>
+										<td class="text-left">
+											<button class="btn btn-principal-outline btn-sm"><i class="fas fa-print"></i> Imprimir</button>
+											<button class="btn btn-secundario-outline btn-sm hide"><i class="fas fa-check"></i> Confirmar pagamento</button>
+										</td>
+									</tr>
+								</table>								
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xl-12 col-12">
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Sistemas e Serviços</h2>
+							</div>
+							<div class="caixa-conteudo-descricao">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-xl-7 col-lg-7 col-md-12 col-12 pl-0">
+											<div class="table-responsive-xl  hmn100 hmx300 scroll">
+												<table class="table tabela1">
+													<tbody>
+														<tr>
+															<th colspan="6" style="background-color:#dcdcdc!important;"><i class="fab fa-codepen"></i> Plataforma DOS</th>
+														</tr>
+														<tr>
+															<th width="35%">Sistema</th>
+															<th>Pacote</th>
+														</tr>
+														<tr>
+															<td>MasterPressPriv</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr>
+														<tr>
+															<td>MasterPlus</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr>
+														<tr>
+															<td>MasterPPP</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr>
+															<tr>
+															<td>	MasterDocumento</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr>
+														<tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr>
+														<tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr><tr>
+															<td>MasterFiscal</td>
+															<td>99 usuários / 99 computadores</td>
+														</tr>
+													</tbody>
+												</table>							
+											</div>
+										</div>	
+										<div class="col-xl-5 col-lg-5 col-md-12 col-12">
+											<h3>Ações</h3>
+											<table class="table tabela1">
+												<tbody>
+													<tr>
+														<td><a href="licenca.html"><i class="fas fa-key"></i> Atualizar arquivos de cifra e limite</a></td>
+													</tr>
+													<tr>
+														<td><a href="atualizacao-instalacao-arquivo.html"><i class="fas fa-redo"></i> Instalar e atualizar sistemas</a></td>
+													</tr>
+													<tr>
+														<td class=""><a href="arquivos-serie-ngpdv.html"><i class="fas fa-print"></i> Gerar arquivos de série para o NGPDV</a></td>	
+													</tr>
+													<tr>
+														<td class=""><a href="backup.html"><i class="fas fa-database"></i> Gerar ou restaurar backup</a></td>	
+													</tr>
+													<tr>
+														<td class=""><a href=""><i class="far fa-question-circle"></i> Solicitar suporte (Cadu)</a></td>	
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>	
+							</div>	
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="row">
+					<div class="col-xl-12 col-12">
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Novidades do Blog Mastermaq</h2>
+							</div>
+							<div class="caixa-conteudo-descricao hmn100 hmax300">
+								<div id="content-div">
+								
+								<d/iv>
+								<ul class="list-unstyled feed-blog">
+									<li><a href="" target="_blank">Qual a importância do comportamento organizacional? | Saiba o que é o comportamento organizacional e como ele contribui para o capital humano da sua empresa</a></li>
+									<li><a href="" target="_blank">Qual a importância do comportamento organizacional? | Saiba o que é o comportamento organizacional e como ele contribui para o capital humano da sua empresa</a></li>
+									<li><a href="" target="_blank">Qual a importância do comportamento organizacional? | Saiba o que é o comportamento organizacional e como ele contribui para o capital humano da sua empresa</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>	
+			<!--FIM CONTEUDO-->
+		</div>	
+	</div>
+
+	
+	<!--RODAPÉ-->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2 col-sm-12"></div>
+				<div class="col-xl-10 col-lg-10 col-sm-12">
+					<p class="text-center mb-1"><img src="assets/img/logo-mmq-cinza.png"></p>
+					<p class="text-center">© 2020 - Mastermaq Software | <a href="">Termos de Uso e Políticas de Privacidade</a></p>
+				</div>
+			</div>	
+		</div>
+	</footer>	
+	<!--FIM RODAPÉ---->
+	<!--DESTAQUE-->	
+	<div class="cadu-aba hide">
+		<strong>Cadu:</strong> Em atendimento  <i class="far fa-window-maximize ml-2" title="Abrir"></i>
+	</div>
+	<div class="novo-atendimento ng-scope" style="displaynone;">
+  <div class="atendimento-cabecalho" style="padding-bottom: 0; min-height: 60px;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 col-sm-4 col-xs-4">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="logo-mmq" width="288.000000pt" height="288.000000pt" viewBox="0 0 288.000000 288.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)" stroke="none">
+              <title id="LogoMMQ" lang="pt-br">Ícone de tesoura animado</title>
+              <path d="M0 1440 l0 -1440 1440 0 1440 0 0 1440 0 1440 -1440 0 -1440 0 0
+
+                            -1440z m2450 714 c11 -12 11 -18 -1 -29 -14 -15 -497 -315 -506 -315 -10 0
+      -463 283 -463 290 0 6 95 52 130 64 8 2 198 5 421 5 356 1 408 -1 419 -15z
+
+                            m-773 -210 c205 -127 326 -207 333 -222 6 -14 10 -122 10 -280 0 -275 -2 -286
+      -52 -313 -19 -10 -20 -9 -13 19 5 23 2 35 -12 49 -10 10 -157 103 -327 208
+
+                            -261 160 -311 195 -322 222 -10 24 -14 91 -14 259 0 201 2 230 17 246 10 11
+      26 18 38 15 11 -2 165 -93 342 -203z m-398 -351 c8 -12 46 -39 84 -61 l70 -41
+
+                            -34 -20 c-19 -12 -36 -21 -40 -21 -3 0 -95 55 -205 123 -182 112 -199 125
+      -202 153 -4 39 8 49 171 150 l132 82 5 -171 c4 -126 9 -178 19 -194z m-352
+
+                            135 c-3 -12 -2 -29 3 -38 5 -9 151 -104 325 -211 221 -135 321 -202 331 -221
+      11 -21 14 -79 14 -266 0 -250 -2 -262 -45 -262 -21 0 -664 392 -677 413 -4 7
+
+                            -8 139 -8 294 0 280 0 282 22 297 31 22 41 20 35 -6z m800 -421 c171 -106 198
+      -126 201 -149 2 -15 -1 -35 -6 -44 -5 -9 -74 -56 -153 -105 l-144 -88 -5 172
+      c-3 95 -9 180 -14 190 -4 10 -39 36 -77 58 -38 23 -69 44 -69 48 0 7 50 40 62
+
+                            41 3 0 96 -55 205 -123z m-557 -379 c127 -78 230 -145 230 -149 0 -4 -28 -21
+      -62 -38 l-61 -31 -417 0 c-364 0 -419 2 -430 15 -9 11 -10 19 -3 26 9 9 504
+      317 511 319 1 0 106 -64 232 -142z"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="col-md-7 col-xs-5 col-sm-5">
+          <h4 class="ng-binding">Continuar atendimento</h4>
+        </div>
+        <div class="col-md-3 col-xs-3 col-sm-3">
+			<button ng-click="fecharTelaPosAtendimento();" type="button" class="close" class=""><span>×</span></button>
+			<button onclick="$('.novo-atendimento').hide();$('.cadu-aba').show();" type="button" class="close mr-2" title="Minimizar"><span>-</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ng-class="{ 'loading-centro': posAtendimento.carregandoTela }" style="width: 100%; height: 100%;" class="">
+    <!-- ngIf: posAtendimento.carregandoTela -->
+    <iframe ng-show="!posAtendimento.carregandoTela" id="IframePosAtendimento" style="border: none; width: 100%; height: 100%;" src="https://chatsi.mastermaq.com.br/cliente/pos_atendimento_cliente_centralajuda-leandro.asp?fDE1ODQ4NDg=" class=""></iframe>
+  </div>
+</div>
+	
+	<div class="destaque-caixa">
+		<!--Fim Cadu Questionário-->
+		<div class="destaque" style="display:block;">
+			<button class="btn btn-sm btn-default" title="Fechar" style="float:right;margin-right:5px;" onclick="$('.destaque').hide();$('.cadu-materiais').hide();$(body).removeClass('semscroll');"><i class="fas fa-times"></i></button>
+			<div class="destaque-cabecalho text-center">
+				<img src="http://centralajuda.mastermaq.com.br/assets/img/logo-cadu.png">
+			</div>
+			<!--Conteudo // Etapa-->
+			<div class="cadu-etapa hide">	
+				<div class="destaque-balao">
+					<p>Olá, no CADU você encontra materiais de apoio, solicita e acompanha atendimentos para serviços e sistemas da Mastermaq.</p>
+					<p><strong>Você está na área de sistemas e serviços, selecione abaixo como podemos te ajudar:</strong></p>
+				</div>
+				<div class="destaque-balao-ponta"></div>
+				<div class="destaque-conteudo">
+					<form>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Item 1
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Item 1
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Item 1
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Item 1
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--Fim Conteudo // Etapa-->
+
+			<!--Conteudo // Etapa 2-->
+			<div class="cadu-etapa hide">	
+				<div class="destaque-balao">
+					<p><strong>Você selecionou:</strong></p>	
+					<div class="row">
+						<div class="col-xl-9 col-lg-9 col-md-12 col-12">Atualização NG</div>
+						<div class="col-xl-3 col-lg-3 col-md-12 col-12 text-right">
+							<button class="btn btn-default-branco btn-sm"><i class="fas fa-arrow-left"></i> Voltar</button>
+						</div>
+					</div>	
+				</div>
+				<div class="destaque-balao-ponta"></div>
+				<div class="destaque-conteudo">
+					<form>
+						<p><strong>Escolha o canal de atendimento:</strong></p>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Ligação
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Chat
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								<span style="float: left;display:block;">Suporte offline</span>
+								<span class="tag-beta"><i class="fas fa-exclamation-circle"></i> Beta</span>
+							</label>
+					
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--Fim Conteudo // Etapa 2-->
+			
+			<!--Conteudo // Caso não tenha materiais para o problema selecionado-->
+			<div class="cadu-etapa hide">	
+				<div class="destaque-balao">
+					<p><strong>Você selecionou:</strong></p>	
+					<div class="row">
+						<div class="col-xl-9 col-lg-9 col-md-12 col-12">Atualização NG</div>
+						<div class="col-xl-3 col-lg-3 col-md-12 col-12 text-right">
+							<button class="btn btn-default-branco btn-sm"><i class="fas fa-arrow-left"></i> Voltar</button>
+						</div>
+					</div>	
+				</div>
+				<div class="destaque-balao-ponta"></div>
+				<div class="destaque-conteudo">
+					<form>
+						<h4 class="text-center">Converse com um de nossos analistas.</h3><br>
+						<p class="text-center"><button class="btn btn-principal"><i class="fas fa-comments"></i> Iniciar atendimento</button></p>
+					</form>
+				</div>
+			</div>
+			<!--Fim Conteudo // Etapa 2-->
+			
+			<div class="destaque-rodape text-center">
+				<button class="btn btn-sm btn-default" onclick="$('.destaque').hide();$('.cadu-materiais').hide();$(body).removeClass('semscroll');"><i class="fas fa-times"></i> Fechar</button>
+			</div>
+		</div>
+		<!--Fim Cadu Questionário-->
+		<!--Cadu materiais-->
+		<div class="cadu-materiais">
+			<div class="cadu-materiais-cabecalho"><h4 class="text-center">Materiais que podem te ajudar</h4></div>
+			<div class="cadu-materiais-conteudos scroll">
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a><a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+			
+			</div>
+			<div class="cadu-materiais-atendimento"><br>
+				<h4 class="text-center">Se preferir, converse com um de nossos analistas.</h3>
+				<p class="text-center"><button class="btn btn-principal"><i class="fas fa-comments"></i> Iniciar atendimento</button></p>
+			</div>
+		</div>
+		<!--Fim Cadu materiais-->
+	</div>
+	<!--FIM DESTAQUE-->
+	<div class="destaque-caixa" style="display:;">
+		<!--Fim Cadu Questionário-->
+		<div class="destaque chamado-offline" style="display:block;width:53vw;">
+			<button class="btn btn-sm btn-default" title="Fechar" style="float:right;margin-right:5px;" onclick="$('.destaque').hide();$('.cadu-materiais').hide();$(body).removeClass('semscroll');"><i class="fas fa-times"></i></button>
+			<div class="destaque-cabecalho text-center">
+				<img src="http://centralajuda.mastermaq.com.br/assets/img/logo-cadu.png">
+			</div>
+			<!--Conteudo // Etapa-->
+			<div class="cadu-etapa hide">	
+				<div class="destaque-balao">
+					<p>Olá, no CADU você encontra materiais de apoio, solicita e acompanha atendimentos para serviços e sistemas da Mastermaq.</p>
+					<p><strong>Você está na área de sistemas e serviços, selecione abaixo como podemos te ajudar:</strong></p>
+				</div>
+				<div class="destaque-balao-ponta"></div>
+				<div class="destaque-conteudo">
+					<form>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Item 1
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Item 1
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Item 1
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+							<label class="form-check-label" for="exampleRadios1">
+								Item 1
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--Fim Conteudo // Etapa-->
+
+			<!--Conteudo // Etapa 2-->
+			<div class="cadu-etapa">	
+				<div class="destaque-balao">
+					<p><strong>Você selecionou:</strong></p>	
+					<div class="row">
+						<div class="col-xl-9 col-lg-9 col-md-12 col-12">Atualização NG
+						<p style="font-size:12px;"> <a href="#ModalResumoSelecionados" style="color:#fff;" data-toggle="modal"><i class="fas fa-info-circle"></i> Resumo das opções selecionadas [Exibir]</a></p>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-12 col-12 text-right">
+							<button class="btn btn-default-branco btn-sm"><i class="fas fa-arrow-left"></i> Voltar</button>
+						</div>
+					</div>	
+				</div>
+				<div class="destaque-balao-ponta"></div>
+				<div class="destaque-conteudo">
+					<form style="zoom:0.9;" class="formulario">
+						<label><strong>Informações para contato</strong></label>
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								<input type="text" class="form-control form-control-sm" value="email@email.com">
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<input type="text" class="form-control form-control-sm" value="(31) 98563 2240">
+							</div>
+						</div>
+			
+						<label><strong>Detalhes</strong></label>
+						<div class="row">
+							<div class="col-md-12">
+								<textarea class="form-control form-control-sm" rows="5" placeholder="Explique o que está acontecendo para que possamos agilizar o atendimento"></textarea>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<input type="file" class="form-control form-control-sm">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 text-right"><button class="btn btn-principal btn-sm" type="button" onclick="$('.formulario').hide();$('.chamado-registrado').show();"><i class="fas fa-check"></i> Registrar chamado</button></div>
+						</div>
+					</form>
+					<div class="chamado-registrado" style="display:none;">
+						<p class="text-center"><img src="assets/img/checked.gif" width="64"></p>
+						<h4 class="text-center"><strong>Seu chamado <small><strong>(Cód. 21123)</strong></small> foi registrado com sucesso.</strong></h4>
+						<hr>
+						<p class="text-center">Você pode ver os detalhes e retornos em <a href=""><strong>"Acompanhar chamados"</strong>.</a></p>
+					</div>	
+				</div>
+			</div>
+			<!--Fim Conteudo // Etapa 2-->
+			
+			<!--Conteudo // Caso não tenha materiais para o problema selecionado-->
+			<div class="cadu-etapa hide">	
+				<div class="destaque-balao">
+					<p><strong>Você selecionou:</strong></p>	
+					<div class="row">
+						<div class="col-xl-9 col-lg-9 col-md-12 col-12">Atualização NG</div>
+						<div class="col-xl-3 col-lg-3 col-md-12 col-12 text-right">
+							<button class="btn btn-default-branco btn-sm"><i class="fas fa-arrow-left"></i> Voltar</button>
+						</div>
+					</div>	
+				</div>
+				<div class="destaque-balao-ponta"></div>
+				<div class="destaque-conteudo">
+					<form>
+						<h4 class="text-center">Converse com um de nossos analistas.</h3><br>
+						<p class="text-center"><button class="btn btn-principal"><i class="fas fa-comments"></i> Iniciar atendimento</button></p>
+					</form>
+				</div>
+			</div>
+			<!--Fim Conteudo // Etapa 2-->
+			
+			<div class="destaque-rodape text-center">
+				<button class="btn btn-sm btn-default" onclick="$('.destaque').hide();$('.cadu-materiais').hide();$(body).removeClass('semscroll');"><i class="fas fa-times"></i> Fechar</button>
+			</div>
+		</div>
+		<!--Fim Cadu Questionário-->
+		<!--Cadu materiais-->
+		<div class="cadu-materiais" style="display:block;">
+			<div class="cadu-materiais-cabecalho"><h4 class="text-center">Materiais que podem te ajudar</h4></div>
+			<div class="cadu-materiais-conteudos scroll">
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+				<a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a><a class="cadu-material-conteudo d-flex">
+					<div class="align-self-center">
+						<img src="http://centralajuda.mastermaq.com.br/assets/img/file.png">
+					</div>
+					<div class="align-self-center">					
+						Mauris non nunc dolor. Ut non fermentum leo.
+					</div>
+				</a>
+			
+			</div>
+			<div class="cadu-materiais-atendimento hide"><br>
+				<h4 class="text-center">Se preferir, converse com um de nossos analistas.</h3>
+				<p class="text-center"><button class="btn btn-principal"><i class="fas fa-comments"></i> Iniciar atendimento</button></p>
+			</div>
+		</div>
+		<!--Fim Cadu materiais-->
+	</div>
+	<!--FIM DESTAQUE-->
+	
+	<!--MODAL RESUMO SELECIONADOS-->
+	<div class="modal fade" id="ModalResumoSelecionados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Opções selecionadas</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li style="font-size:18px;"><strong>Item 3</strong></li>
+					</ul>
+						
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-sm" data-dismiss="modal"><i class="fas fa-times"></i> Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIM MODAL RESUMO SELECIONADOS->		
+									
+	<!--MODAL MÉDIO-->
+	<div class="modal fade" id="ModalAlerta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-exclamation-triangle"></i> Alertas <small><strong>1</strong> de <strong>5</strong> </small></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="alertas">
+						<!--Alerta-->
+						<div class="alerta">
+							<h3>Titulo</h3>
+							<div class="alerta-caixa scroll">
+								<iframe src="http://areadocliente.mastermaq.com.br/politicas/uso-politicas-privacidade.htm" width="100%" height="350px"></iframe>
+							</div>
+							<div class="alerta-acoes">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 text-center">
+											<button class="btn btn-excluir btn-sm">Não aceito os termos e condições</button>
+											<button class="btn btn-principal btn-sm">Sim, aceito os termos e condições</button>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!--Fim Alerta-->	
+					</div>	
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-sm" data-dismiss="modal"><i class="fas fa-times"></i> Fechar</button>
+					<button type="button" class="btn  btn-principal-outline  btn-sm"><i class="fas fa-arrow-left"></i> Anterior</button>
+					<button type="button" class="btn btn-principal-outline btn-sm"><i class="fas fa-arrow-right"></i> Próximo</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIM MODAL MÉDIO-->
+	<script type="text/javascript">
+		$(window).on('load',function(){
+			//$('#ModalResumoSelecionados').modal('show');
+		});
+	</script>
+	
+</body>
+</html>

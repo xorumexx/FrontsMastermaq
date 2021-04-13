@@ -1,0 +1,229 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Renegociação| Área do cliente Mastermaq </title>
+	<meta name="description" content="Padrões da área do cliente Mastermaq">
+	<meta name="author" content="Leandro Eustáquio SI - Mastermaq">
+
+	<!--ESTILOS-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css"> 
+	<link rel="stylesheet" href="assets/css/all.min.css"> 	
+	<!--FIM ESTILOS-->
+
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script SRC="assets/JS/bootstrap.min.js"></script>
+	<!--FIM JQUERY-->
+
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand p-0" href="#">
+				<img src="assets/img/logo-mmq.png" width="35" class="d-inline-block align-middle" alt="" loading="lazy">
+				Área <strong>do cliente</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+				<form class="col-6">
+					<select class="form-control mr-sm-0 cliente-selecionado">
+						<option>522195 - MAXCOR INDUSTRIA DE ETIQUETAS LTDA</option>
+						<option>121325 - TOMAZ CONTABILIDADE EIRELI</option>
+					</select>
+				</form>
+				<ul class="navbar-nav ml-auto content-end pr-4 pt-1">
+					<li class="nav-item active mr-lg-2" title="Ajuda do Cadu">
+						<button class="btn btn-secundario"><i class="fas fa-question-circle"></i> Cadu</button>
+					</li>
+					<li class="nav-item mr-lg-2" title="Notificações importantes para você">
+						<button class="btn btn-principal" disabled><i class="fas fa-exclamation-triangle"></i> <small>0</small></button>
+					</li>
+					<li class="nav-item dropdown perfil">
+						<!--SEM FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="far fa-user"></i>
+						</a>
+						<!--FIM SEM FOTO-->
+						<!--FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto com-foto hide" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxJT_RLIY7HFPGg80dMCJt9nlafYiCEHnxRg&usqp=CAU');background-size:cover;">
+							
+						</a>
+						<!--FIM FOTO-->
+						
+					
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <p class="vermelho mb-0 pr-1 pl-1 text-center" href="#"><Strong>Matheus Rocha Martins</strong></p>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#"><strong>Acessar passaporte</strong></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>	
+	<div class="container-fluid">
+		<div class="row">
+			<!--MENU LATERAL-->
+			<aside class="col-xl-2 col-lg-2 col-md-12 col-12 p-0 sidebar">
+				<div class="menu-lateral sidebar-sticky">
+					<ul class="list-unstyled">
+						<li>
+							<a href="">
+								<img src="assets/img/menu-home.png" class="icone-normal"> 
+								<img src="assets/img/menu-home-ativo.png" class="icone-ativo"> Início
+							</a>
+						</li>
+						<li>
+							<a href="" class="ativo">
+								<img src="assets/img/menu-financeiro.png" class="icone-normal"> 
+								<img src="assets/img/menu-financeiro-ativo.png" class="icone-ativo"> Financeiro
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-informacoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-informacoes-ativo.png" class="icone-ativo"> Dados do cliente
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-atendimento-servicos.png" class="icone-normal"> 
+								<img src="assets/img/menu-atendimento-servicos-ativo.png" class="icone-ativo"> Sistemas e serviços
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-capacitacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-capacitacao-ativo.png" class="icone-ativo"> Capacitação
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-implantacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-implantacao-ativo.png" class="icone-ativo"> Implantação
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="assets/img/menu-sugestoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-sugestoes-ativo.png" class="icone-ativo"> Painel de sugestões
+							</a>
+						</li>
+						
+					</ul>
+				</div>	
+			</aside>
+			<!--FIM MENU LATERAL-->
+			<!--CONTEUDO-->
+			<section class="col-xs-10 col-lg-10 col-md-12 col-sm-12 col-12 ml-sm-auto meio">
+					<!--RENEGOCIAÇÃO-->
+					<div class="caixa-conteudo">
+						<div class="caixa-conteudo-titulo">
+							<h2>Renegociação</h2>
+						</div>
+						<div class="caixa-conteudo-descricao hmn100">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 pl-0">
+										<p>Selecione abaixo os boletos que deseja renegociar.</p>
+										<table class="table tabela1">
+											<tr>
+												<th width="5%"><input type="checkbox"></th>
+												<th width="35%">Identificação</th>
+												<th width="15%">Vencimento</th>
+												<th width="15%" class="text-center">Valor</th>
+												<th width="15%" class="text-center">Valor atualizado</th>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>Sistemas</td>
+												<td>05/05/2020</td>
+												<td class="text-center">R$ 670,00</td>
+												<td class="text-center">R$ 690,00</td>
+											</tr>
+												<tr>
+												<td><input type="checkbox"></td>
+												<td>Sistemas</td>
+												<td>05/05/2020</td>
+												<td class="text-center">R$ 670,00</td>
+												<td class="text-center">R$ 690,00</td>
+											</tr>
+										</table>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+										<div class="caixa-arrendondada">
+											<h3 class="text-center">Total a ser pago</h3>
+											<p class="sublinhado text-center" style="font-size:20px;">R$ 670,00</p>
+											<p class="text-center"><button class="btn btn-principal" data-target="#ModalRenegociacao" data-toggle="modal"><i class="fas fa-arrow-right"></i> Iniciar renegociação</button></p>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div><br><br>
+					</div>	
+					<!--FIM RENEGOCIAÇÃO-->
+			</section>	
+			<!--FIM CONTEUDO-->
+		</div>	
+	</div>
+	<!--RODAPÉ-->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2 col-sm-12"></div>
+				<div class="col-xl-10 col-lg-10 col-sm-12">
+					<p class="text-center mb-1"><img src="assets/img/logo-mmq-cinza.png"></p>
+					<p class="text-center">© 2020 - Mastermaq Software | <a href="">Termos de Uso e Políticas de Privacidade</a></p>
+				</div>
+			</div>	
+		</div>
+	</footer>	
+	<!--FIM RODAPÉ---->
+
+
+	<!--MODAL RENEGOCIAÇÃO-->
+	<div class="modal fade" id="ModalRenegociacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Renegociação</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p><strong>Valor da renegociação:</strong> R$ 0,00</p>
+					<hr>
+					<p><strong>Data de vencimento:</strong> 00/00/0000</p>
+					<hr>
+					<p><strong>Selecione abaixo os endereços de e-mails que irão receber o link da renegociação.</strong></p> 
+					<table class="table tabela1">
+						<tr>
+							<td width="50%"><input type="text" class="form-control form-control-sm" id="staticEmail2" placeholder="Adicionar novo e-mail"></td>
+							<td><button type="submit" class="btn btn-principal-outline btn-sm"><i class="fas fa-check"></i></button></td>
+						</tr>
+					</table>
+					<ul class="list-unstyled">
+						<li class="mb-2"><input type="checkbox"> flavio.silva@maxcor.com.br</li>
+						<li class="mb-2"><input type="checkbox"> flavio.silva@maxcor.com.br</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
+					<button type="button" class="btn btn-principal"><i class="fas fa-check"></i> Confirmar renegociação</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIM MODAL RENEGOCIAÇÃO-->
+
+</body>
+</html>

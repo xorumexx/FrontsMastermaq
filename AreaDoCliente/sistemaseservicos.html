@@ -1,0 +1,293 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Área do cliente Mastermaq </title>
+	<meta name="description" content="Padrões da área do cliente Mastermaq">
+	<meta name="author" content="Leandro Eustáquio SI - Mastermaq">
+
+	<!--ESTILOS-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css"> 
+	<link rel="stylesheet" href="assets/css/all.min.css"> 	
+	<!--FIM ESTILOS-->
+
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script SRC="assets/JS/bootstrap.min.js"></script>
+	<!--FIM JQUERY-->
+
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand p-0" href="#">
+				<img src="assets/img/logo-mmq.png" width="35" class="d-inline-block align-middle" alt="" loading="lazy">
+				Área <strong>do cliente</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+				<form class="col-6">
+					<select class="form-control mr-sm-0 cliente-selecionado">
+						<option>522195 - MAXCOR INDUSTRIA DE ETIQUETAS LTDA</option>
+						<option>121325 - TOMAZ CONTABILIDADE EIRELI</option>
+					</select>
+				</form>
+				<ul class="navbar-nav ml-auto content-end pr-4 pt-1">
+					<li class="nav-item active mr-lg-2" title="Ajuda do Cadu">
+						<button class="btn btn-secundario"><i class="fas fa-question-circle"></i> Cadu</button>
+					</li>
+					<li class="nav-item mr-lg-2" title="Notificações importantes para você">
+						<button class="btn btn-principal" disabled><i class="fas fa-exclamation-triangle"></i> <small>0</small></button>
+					</li>
+					<li class="nav-item dropdown perfil">
+						<!--SEM FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="far fa-user"></i>
+						</a>
+						<!--FIM SEM FOTO-->
+						<!--FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto com-foto hide" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxJT_RLIY7HFPGg80dMCJt9nlafYiCEHnxRg&usqp=CAU');background-size:cover;">
+							
+						</a>
+						<!--FIM FOTO-->
+						
+					
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <p class="vermelho mb-0 pr-1 pl-1 text-center" href="#"><Strong>Matheus Rocha Martins</strong></p>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#"><strong>Acessar passaporte</strong></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>	
+	<div class="container-fluid">
+		<div class="row">
+			<!--MENU LATERAL-->
+			<aside class="col-xl-2 col-lg-2 col-md-12 col-12 p-0 sidebar">
+				<div class="menu-lateral sidebar-sticky">
+					<ul class="list-unstyled">
+						<li>
+							<a href="">
+								<img src="assets/img/menu-home.png" class="icone-normal"> 
+								<img src="assets/img/menu-home-ativo.png" class="icone-ativo"> Início
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="assets/img/menu-financeiro.png" class="icone-normal"> 
+								<img src="assets/img/menu-financeiro-ativo.png" class="icone-ativo"> Financeiro
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-informacoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-informacoes-ativo.png" class="icone-ativo"> Dados do cliente
+							</a>
+						</li>
+						<li>
+							<a href=""   class="ativo">
+								<img src="assets/img/menu-atendimento-servicos.png" class="icone-normal"> 
+								<img src="assets/img/menu-atendimento-servicos-ativo.png" class="icone-ativo"> Sistemas e serviços
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-capacitacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-capacitacao-ativo.png" class="icone-ativo"> Capacitação
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-implantacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-implantacao-ativo.png" class="icone-ativo"> Implantação
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="assets/img/menu-sugestoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-sugestoes-ativo.png" class="icone-ativo"> Painel de sugestões
+							</a>
+						</li>
+						
+					</ul>
+				</div>	
+			</aside>
+			<!--FIM MENU LATERAL-->
+			<!--CONTEUDO-->
+			<section class="col-xs-10 col-lg-10 col-md-12 col-sm-12 col-12 ml-sm-auto meio">
+				<div class="row">
+					<div class="col-xl-8 col-lg-8 col-md-12  col-sm-12 col-12">
+						<!--Sistemas e Serviços-->
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Sistemas e serviços contratados</h2>
+							</div>
+							<div class="caixa-conteudo-descricao hmn100">
+								<table class="table tabela1">
+									<tr>
+										<th colspan="2"  style="background-color:#dcdcdc!important;"><i class="fab fa-codepen"></i> Plataforma ADM</th>
+										<th  style="background-color:#dcdcdc!important;font-weight:normal;" class="text-right"><span style="font-size:14px;" class="vermelho"><i class="fas fa-exclamation-circle"></i> Pagamento pendente</span></th>
+									</tr>
+									<tr>
+										<th width="35%" >Sistema</th>
+										<th width="20%" class="text-center">Licença</th>
+										<th>Pacote</th>
+									</tr>
+									<tr>
+										<td>MasterFinanceiro</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+									<tr>
+										<td>MasterFaturamento</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+									<tr>
+										<td>MasterEstoque</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+									<tr>
+										<td>MasterAcesso</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+									<tr>
+										<td>MasterPonto</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+									<tr>
+										<td>MasterPdv</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+									<tr>
+										<td>MasterAlmoxarifado	</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+									<tr>
+										<td>MasterCompras</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+								</table>	
+								<table class="table tabela1">
+									<tr>
+										<th colspan="6" style="background-color:#dcdcdc!important;"><i class="fab fa-codepen"></i> Plataforma DOS</th>
+									</tr>
+									<tr>
+										<th width="35%" >Sistema</th>
+										<th width="20%" class="text-center">Licença</th>
+										<th>Pacote</th>
+									</tr>
+									<tr>
+										<td>MasterPressPriv</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+									<tr>
+										<td>MasterPlus</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+									<tr>
+										<td>MasterPPP</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+										<tr>
+										<td>	MasterDocumento</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+										<tr>
+										<td>MasterFiscal</td>
+										<td class="text-center">123aa54d</td>
+										<td>99 usuários / 99 computadores</td>
+									</tr>
+								</table>									
+							</div>
+						</div>
+						<!--Fim Sistemas e Serviços-->
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+						<div class="caixa-conteudo hide">
+							<div class="caixa-conteudo-titulo">
+								<h2>Gerenciar licenças</h2>
+							</div>
+							<div class="caixa-conteudo-descricao">
+								<table class="table tabela1">
+									<tr>
+										<td><a href=""><i class="fas fa-redo"></i> Atualizar arquivos de cifra e limite</a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Mais opções</h2>
+							</div>
+			
+							<div class="caixa-conteudo-descricao hmn100 p0">
+								<table class="table tabela1">
+									<tr>
+										<td><a href="licenca.html"><i class="fas fa-key"></i> Atualizar arquivos de cifra e limite</a></td>
+									</tr>
+									<tr>
+										<td><a href="atualizacao-instalacao-arquivo.html"><i class="fas fa-redo"></i> Instalar e atualizar sistemas</a></td>
+									</tr>
+									<tr>
+										<td class=""><a href="arquivos-serie-ngpdv.html"><i class="fas fa-print"></i> Gerar arquivos de série para o NGPDV</a></td>	
+									</tr>
+									<tr>
+										<td class=""><a href="backup.html"><i class="fas fa-database"></i> Gerar ou restaurar backup</a></td>	
+									</tr>
+									<tr>
+										<td class=""><a href=""><i class="far fa-question-circle"></i> Solicitar suporte (Cadu)</a></td>	
+									</tr>
+								</table>
+							</div>
+						</div>
+						
+					</div>		
+				</div>
+			</section>	
+			<!--FIM CONTEUDO-->
+		</div>	
+	</div>
+	<!--RODAPÉ-->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2 col-sm-12"></div>
+				<div class="col-xl-10 col-lg-10 col-sm-12">
+					<p class="text-center mb-1"><img src="assets/img/logo-mmq-cinza.png"></p>
+					<p class="text-center">© 2020 - Mastermaq Software | <a href="">Termos de Uso e Políticas de Privacidade</a></p>
+				</div>
+			</div>	
+		</div>
+	</footer>	
+	<!--FIM RODAPÉ---->
+
+	
+	
+	<script type="text/javascript">
+		$(window).on('load',function(){
+			//$('#ModalNotasFiscais').modal('show');
+		});
+	</script>
+	
+</body>
+</html>

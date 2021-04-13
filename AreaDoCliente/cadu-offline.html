@@ -1,0 +1,166 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	<title>Área do cliente Mastermaq </title>
+	<meta name="description" content="Padrões da área do cliente Mastermaq">
+	<meta name="author" content="Leandro Eustáquio SI - Mastermaq">
+
+	<!--ESTILOS-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css"> 
+	<link rel="stylesheet" href="assets/css/all.min.css"> 	
+	<link rel="stylesheet" href="http://padrao.mastermaq.com.br/css/cadu-atendimento.css">
+	<!--FIM ESTILOS-->
+
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script SRC="assets/JS/bootstrap.min.js"></script>
+	<!--FIM JQUERY-->
+
+</head>
+
+<body>
+
+
+<!--FIM DESTAQUE-->
+<div class="destaque-caixa">
+	<div class="destaque" style="display:block;">
+		<button class="btn btn-sm btn-default" title="Fechar" style="float:right;margin-right:5px;" onclick="$('.destaque').hide();$('.cadu-materiais').hide();$(body).removeClass('semscroll');"><i class="fas fa-times"></i></button>
+		<div class="destaque-cabecalho text-center">
+			<img src="http://centralajuda.mastermaq.com.br/assets/img/logo-cadu.png">
+		</div>
+		
+		<!--Conteudo // Opções-->
+		<div class="cadu-etapa">	
+			<div class="destaque-balao">
+				<p><strong>Você selecionou:</strong></p>	
+				<div class="row">
+					<div class="col-xl-9 col-lg-9 col-md-12 col-12">Atualização NG</div>
+					<div class="col-xl-3 col-lg-3 col-md-12 col-12 text-right">
+						<button class="btn btn-default-branco btn-sm"><i class="fas fa-arrow-left"></i> Voltar</button>
+					</div>
+				</div>	
+			</div>
+			<div class="destaque-balao-ponta"></div>
+			<div class="destaque-conteudo">
+				<form>
+					<p><strong>Escolha o canal de atendimento:</strong></p>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+						<label class="form-check-label" for="exampleRadios1">
+							Ligação
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+						<label class="form-check-label" for="exampleRadios1">
+							Chat
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+						<label class="form-check-label" for="exampleRadios1">
+							<span style="float: left;display:block;">Suporte offline</span>
+							<span class="tag-beta"><i class="fas fa-exclamation-circle"></i> Beta</span>
+						</label>
+				
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--Fim Conteudo // Opções-->
+		<!--Conteudo // Forulario offline-->
+		<div class="cadu-etapa hide">	
+			<div class="destaque-balao">
+				<p><strong>Você selecionou:</strong></p>	
+				<div class="row">
+					<div class="col-xl-9 col-lg-9 col-md-12 col-12">Atualização NG
+					<p style="font-size:12px;"> <a href="#ModalResumoSelecionados" style="color:#fff;" data-toggle="modal"><i class="fas fa-info-circle"></i> Resumo das opções selecionadas [Exibir]</a></p>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-12 col-12 text-right">
+						<button class="btn btn-default-branco btn-sm"><i class="fas fa-arrow-left"></i> Voltar</button>
+					</div>
+				</div>	
+			</div>
+			<div class="destaque-balao-ponta"></div>
+			<div class="destaque-conteudo">
+				<form style="zoom:0.9;" class="formulario">
+					<label><strong>Informações para contato</strong></label>
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<input type="text" class="form-control form-control-sm" value="email@email.com">
+						</div>
+						<div class="col-md-6 col-sm-12">
+							<input type="text" class="form-control form-control-sm" value="(31) 98563 2240">
+						</div>
+					</div>
+		
+					<label><strong>Detalhes</strong></label>
+					<div class="row">
+						<div class="col-md-12">
+							<textarea class="form-control form-control-sm" rows="5" placeholder="Explique o que está acontecendo para que possamos agilizar o atendimento"></textarea>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-12">
+							<input type="file" class="form-control form-control-sm">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-right"><button class="btn btn-principal btn-sm" type="button" onclick="$('.formulario').hide();$('.chamado-registrado').show();"><i class="fas fa-check"></i> Registrar chamado</button></div>
+					</div>
+				</form>
+				<div class="chamado-registrado" style="display:none;">
+					<p class="text-center"><img src="assets/img/checked.gif" width="64"></p>
+					<h4 class="text-center"><strong>Seu chamado <small><strong>(Cód. 21123)</strong></small> foi registrado com sucesso.</strong></h4>
+					<hr>
+					<p class="text-center">Você pode ver os detalhes e retornos em <a href=""><strong>"Acompanhar chamados"</strong>.</a></p>
+				</div>	
+			</div>
+		</div>
+		<!--Fim Conteudo // Etapa 2-->
+	
+
+		<div class="destaque-rodape text-center">
+			<button class="btn btn-sm btn-default" onclick="$('.destaque').hide();$('.cadu-materiais').hide();$(body).removeClass('semscroll');"><i class="fas fa-times"></i> Fechar</button>
+		</div>
+	</div>
+	<!--Fim Cadu Questionário-->
+</div>
+<!--FIM DESTAQUE-->
+
+
+<!--MODAL RESUMO SELECIONADOS-->
+<div class="modal fade" id="ModalResumoSelecionados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Opções selecionadas</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li style="font-size:18px;"><strong>Item 3</strong></li>
+				</ul>
+					
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default btn-sm" data-dismiss="modal"><i class="fas fa-times"></i> Fechar</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--FIM MODAL RESUMO SELECIONADOS->		
+
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Área do cliente Mastermaq </title>
+	<meta name="description" content="Padrões da área do cliente Mastermaq">
+	<meta name="author" content="Leandro Eustáquio SI - Mastermaq">
+
+	<!--ESTILOS-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css"> 
+	<link rel="stylesheet" href="assets/css/all.min.css"> 	
+	<!--FIM ESTILOS-->
+
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script SRC="assets/JS/bootstrap.min.js"></script>
+	<!--FIM JQUERY-->
+
+</head>
+
+<body>
+	<div class="loading-backdrop hide">
+		<div class="loading-item">
+			<img src="assets/img/mmq-load.gif">
+		</div>	
+	</div>
+
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand p-0" href="#">
+				<img src="assets/img/logo-mmq.png" width="35" class="d-inline-block align-middle" alt="" loading="lazy">
+				Área <strong>do cliente</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+				<form class="col-6">
+					<select class="form-control mr-sm-0 cliente-selecionado">
+						<option>522195 - MAXCOR INDUSTRIA DE ETIQUETAS LTDA</option>
+						<option>121325 - TOMAZ CONTABILIDADE EIRELI</option>
+					</select>
+				</form>
+				<ul class="navbar-nav ml-auto content-end pr-4 pt-1">
+					<li class="nav-item active mr-lg-2" title="Ajuda do Cadu">
+						<button class="btn btn-secundario"><i class="fas fa-question-circle"></i> Cadu</button>
+					</li>
+					<li class="nav-item mr-lg-2" title="Notificações importantes para você">
+						<button class="btn btn-principal" disabled><i class="fas fa-exclamation-triangle"></i> <small>0</small></button>
+					</li>
+					<li class="nav-item dropdown perfil">
+						<!--SEM FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="far fa-user"></i>
+						</a>
+						<!--FIM SEM FOTO-->
+						<!--FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto com-foto hide" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxJT_RLIY7HFPGg80dMCJt9nlafYiCEHnxRg&usqp=CAU');background-size:cover;">
+							
+						</a>
+						<!--FIM FOTO-->
+						
+					
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <p class="vermelho mb-0 pr-1 pl-1 text-center" href="#"><Strong>Matheus Rocha Martins</strong></p>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#"><strong>Acessar passaporte</strong></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>	
+	<div class="container-fluid">
+		<div class="row">
+			<!--MENU LATERAL-->
+			<aside class="col-xl-2 col-lg-2 col-md-12 col-12 p-0 sidebar">
+				<div class="menu-lateral sidebar-sticky">
+					<ul class="list-unstyled">
+						<li>
+							<a href="">
+								<img src="assets/img/menu-home.png" class="icone-normal"> 
+								<img src="assets/img/menu-home-ativo.png" class="icone-ativo"> Início
+							</a>
+						</li>
+						<li>
+							<a href="" class="ativo">
+								<img src="assets/img/menu-financeiro.png" class="icone-normal"> 
+								<img src="assets/img/menu-financeiro-ativo.png" class="icone-ativo"> Financeiro
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-informacoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-informacoes-ativo.png" class="icone-ativo"> Dados do cliente
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-atendimento-servicos.png" class="icone-normal"> 
+								<img src="assets/img/menu-atendimento-servicos-ativo.png" class="icone-ativo"> Sistemas e serviços
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-capacitacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-capacitacao-ativo.png" class="icone-ativo"> Capacitação
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-implantacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-implantacao-ativo.png" class="icone-ativo"> Implantação
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="assets/img/menu-sugestoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-sugestoes-ativo.png" class="icone-ativo"> Painel de sugestões
+							</a>
+						</li>
+						
+					</ul>
+				</div>	
+			</aside>
+			<!--FIM MENU LATERAL-->
+			<!--CONTEUDO-->
+			<section class="col-xs-10 col-lg-10 col-md-12 col-sm-12 col-12 ml-sm-auto meio">
+				<!--Banner-->
+				<div class="row banner">
+					<div class="col-xs-12 col-12">
+						<a href="">
+							<img src="assets/img/banner/banner-renegocie.png">
+						</a>
+					</div>
+				</div>
+				<!--Fim Banner-->
+				<div class="row">
+					<div class="col-xl-9 col-lg-9 col-md-12  col-sm-12 col-12">
+						<!--BOLETOS-->
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Boletos</h2>
+							</div>
+							<div class="caixa-conteudo-descricao hmn100 hmx300">
+								<nav>
+									<div class="nav nav-tabs aba" id="nav-tab" role="tablist">
+										<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#em-aberto" role="tab" aria-controls="nav-home" aria-selected="true">Em aberto</a>
+										<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#pagos" role="tab" aria-controls="nav-profile" aria-selected="false">Pagos</a>
+									</div>
+								</nav>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="em-aberto" role="tabpanel" aria-labelledby="nav-home-tab">
+										<table class="table tabela1">
+											<tr>
+												<th width="20%">Identificação</th>
+												<th width="20%">Vencimento</th>
+												<th width="15%" class="text-center">Valor</th>
+												<th></th>
+											</tr>
+											<tr>
+												<td>Sistemas</td>
+												<td  class="vermelho"><i class="fas fa-exclamation-circle"></i> 05/05/2020</td>
+												<td class="text-center">R$ 670,00</td>
+												<td class="text-leftr">
+													<button class="btn btn-principal-outline btn-sm"><i class="fas fa-print"></i> Imprimir</button>
+													<button class="btn btn-secundario-outline btn-sm" data-target="#ModalConfirmarPagamento" data-toggle="modal"><i class="fas fa-check"></i> Confirmar pagamento</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Sistemas</td>
+												<td>05/05/2020</td>
+												<td class="text-center">R$ 670,00</td>
+												<td class="text-left">
+													<button class="btn btn-principal-outline btn-sm"><i class="fas fa-print"></i> Imprimir</button>
+													<button class="btn btn-secundario-outline btn-sm hide"><i class="fas fa-check"></i> Confirmar pagamento</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Sistemas</td>
+												<td>05/05/2020</td>
+												<td class="text-center">R$ 670,00</td>
+												<td class="text-left">
+													<button class="btn btn-principal-outline btn-sm"><i class="fas fa-print"></i> Imprimir</button>
+													<button class="btn btn-secundario-outline btn-sm hide"><i class="fas fa-check"></i> Confirmar pagamento</button>
+												</td>
+											</tr>
+										</table>
+											
+									</div>
+									<div class="tab-pane fade" id="pagos" role="tabpanel" aria-labelledby="nav-profile-tab">
+										<table class="table tabela1">
+											<tr>
+												<th width="20%">Identificação</th>
+												<th width="20%">Vencimento</th>
+												<th width="20%" class="text-center">Valor</th>
+												<th>Data do pagamento</th>
+											</tr>
+											<tr>
+												<td>Sistemas</td>
+												<td  class=""> 05/05/2020</td>
+												<td class="text-center">R$ 670,00</td>
+												<td class="text-left">
+													05/05/2020
+												</td>
+											</tr>
+										</table>
+									</div>
+	
+								</div>
+													
+							</div>	
+						</div>
+						<!--FIM BOLETOS-->
+						<!--BOLETOS POR SMS E EMAIL-->
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Receba os boletos por e-mail ou sms</h2>
+							</div>
+							<div class="caixa-conteudo-descricao hmn100 hmx300" style="overflow-x:hidden;">
+								<div class="row p-0">
+									<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+										<h4>E-mail <small><i class="fas fa-info-circle"></i></small></h4>
+										<form>
+											<table class="table tabela1">
+												<tr>
+													<td width="90%"><input type="text" class="form-control" id="staticEmail2" placeholder="emal@email.com.br ...."></td>
+													<td><button type="submit" class="btn btn-principal-outline btn-sm"><i class="fas fa-check"></i></button></td>
+												</tr>
+											</table>
+										</form>
+										<table class="table">
+											<tr>
+												<td width="90%">teste@teste.com</td>
+												<td><button class="btn btn-excluir btn-sm"><i class="fas fa-trash-alt"></i></button></td>
+											</tr>
+										</table>									
+									</div>
+									<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+										<h4>Telefone <small><i class="fas fa-info-circle"></i></small></h4>
+										<form>
+											<table class="table tabela1">
+												<tr>
+													<td width="90%"><input type="text" class="form-control" id="staticEmail2" placeholder="(xx) xxxxx-xxxx"></td>
+													<td><button type="submit" class="btn btn-principal-outline btn-sm"><i class="fas fa-check"></i></button></td>
+												</tr>
+											</table>
+										</form>
+										<table class="table">
+											<tr>
+												<td width="90%">(31) 99212-5522</td>
+												<td><button class="btn btn-excluir btn-sm"><i class="fas fa-trash-alt"></i></button></td>
+											</tr>
+										</table>
+									</div>
+								</div>	
+							</div>	
+
+						</div>
+						<!--FIM BOLETOS POR SMS E EMAIL-->
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Data de vencimento</h2>
+							</div>
+							<div class="caixa-conteudo-descricao">
+								<p>Atualmente seus <strong>boletos vencem</strong> todo dia: 5 <small><a href="#ModalDataBoleto" data-toggle="modal">[Alterar]</a></small></p>
+							</div>
+						</div>
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Carta da quitação anual</h2>
+							</div>
+							<div class="caixa-conteudo-descricao hmn100 hmx200">
+								<table class="table tabela1">
+									<tr>
+										<td width="90%">Débitos de 2019</td>
+										<td><button class="btn btn-principal-outline btn-sm" title="Imprimir"><i class="fas fa-print"></i></button></td>
+									</tr>
+									<tr>
+										<td width="90%">Débitos de 2018</td>
+										<td><button class="btn btn-principal-outline btn-sm" title="Imprimir"><i class="fas fa-print"></i></button></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Notas fiscais</h2>
+							</div>
+							<div class="caixa-conteudo-descricao">
+								<a href="#ModalNotasFiscais" data-toggle="modal"><i class="far fa-file-alt"></i> Visualizar notas fiscais</a>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+			</section>	
+			<!--FIM CONTEUDO-->
+		</div>	
+	</div>
+	<!--RODAPÉ-->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2 col-sm-12"></div>
+				<div class="col-xl-10 col-lg-10 col-sm-12">
+					<p class="text-center mb-1"><img src="assets/img/logo-mmq-cinza.png"></p>
+					<p class="text-center">© 2020 - Mastermaq Software | <a href="">Termos de Uso e Políticas de Privacidade</a></p>
+				</div>
+			</div>	
+		</div>
+	</footer>	
+	<!--FIM RODAPÉ---->
+	
+	<!--MODAL CONFIRMAR PAGAMENTO-->
+	<div class="modal fade" id="ModalConfirmarPagamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Confirmar pagamento</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4>Informações importantes</h4>
+					<p>Ressaltamos a importância de utilizar esse recurso somente após a quitação de seu boleto.</p>
+					<p>Esta confirmação só pode ser realizada uma vez. Caso ela tenha sido feita antes da efetivação do pagamento, será necessário aguardar a compensação bancária para que o seu sistema seja liberado.</p>
+					<p>O prazo mínimo estabelecido pelos bancos é de 48h úteis.</p>
+					<p><strong>Selecione os boletos que deseja confirmar pagamento</strong></p>
+					
+					<table class="table tabela1">
+						<tr>
+							<th width="5%"><input type="checkbox"></th>
+							<th width="35%">Identificação</th>
+							<th width="20%">Vencimento</th>
+							<th width="15%" class="text-center">Valor</th>
+							
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Sistemas</td>
+							<td>05/05/2020</td>
+							<td class="text-center">R$ 670,00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Sistemas</td>
+							<td>05/05/2020</td>
+							<td class="text-center">R$ 670,00</td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
+					<button type="button" class="btn btn-principal"><i class="fas fa-check"></i> Confirmar pagamento</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIM MODAL CONFIRMAR PAGAMENTO-->
+	
+	<!--MODAL ALTERAR DATA DE PAGAMENTO-->
+	<div class="modal fade" id="ModalDataBoleto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Alterar data de vencimento</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4>Informações importantes</h4>
+					<p>Com a finalidade de proporcionar ao cliente uma maior comodidade e praticidade no planejamento dos seus recursos financeiros, disponibilizamos a possibilidade de escolha de data de vencimento de seu boleto. Sendo assim, você poderá solicitar a opção do melhor dia a ser fixado como vencimento mensal. Atualmente, trabalhamos com três opções: sendo 05, 15 e 25 de cada mês. A escolha da data deverá ser analisada pelo cliente e validada pela Mastermaq, estando o solicitante ciente que ao confirmar poderá implicar no vencimento de duas faturas no mesmo mês. Sendo um pro rata die e outro integral. O cliente poderá fazer o pedido a qualquer momento, porém a alteração, quando validada, será processada sempre no último dia útil do mês e, caso já tenha sido gerado o boleto do próximo mês, a alteração passará a contar somente no faturamento seguinte.</p>
+
+					<p><strong>Exemplo:</strong> Foi solicitado a alteração da data de vencimento de seus boletos, do dia 15 para o dia 25, no dia 20/04. A alteração foi processada no dia 30/04 (Último dia do mês), porém já havia sido gerado o boleto do dia 15/05 (Todos os boletos mensais são gerados 30 dias antes do vencimento). Caso validada a alteração, o próximo boleto a ser emitido com a nova data terá vencimento em 25/06. Ressaltamos que alterações entre as datas 5 para 15 ou 25 e 15 para 25, acarretará em duas faturas para dentro do mesmo mês. E não será possível solicitar a alteração do vencimento de boleto renegociados e os boletos já gerados.</p>
+					<hr>
+					<p><strong><i class="far fa-calendar-check vermelho"></i> Data de vencimento atual:</strong>
+						<select class="form-control-inline">
+							<option>5</option>
+							<option>15</option>
+							<option>25</option>
+						</select>
+					</p>
+					<p>
+						<input type="checkbox"> <strong>Li e concordo com as condições citadas acima e estou ciente de que a alteração poderá implicar no vencimento de duas faturas no mesmo mês.</strong>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
+					<button type="button" class="btn btn-principal"><i class="fas fa-check"></i> Alterar data de vencimento</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIM MODAL ALTERAR DATA DE PAGAMENTO-->
+	
+	<!--MODAL NOTAS FISCAIS-->
+	<div class="modal fade" id="ModalNotasFiscais" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Notas fiscais</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Período: 
+						<select class="form-control-inline">
+							<option>2020</option>
+						</select>
+					</p>
+					<table class="table tabela1">
+						<tr>
+							<th width="10%" class="text-center">Espécie</th>
+							<th width="20%">Número</th>
+							<th width="15%" class="text-center">Valor total</th>
+							<th width="10%" class="text-center">Data de emissão</th>
+							<th width="10%" class="text-center">Visualizar</th>
+							<th width="10%" class="text-center">Download XML</th>
+						</tr>
+						<tr>
+							<td class="text-center">RPS</td>
+							<td>04082320336778</td>
+							<td class="text-center">R$ 519,34</td>
+							<td class="text-center">04/06/2020</td>
+							<td class="text-center"><button class="btn btn-principal-outline btn-sm"><i class="fas fa-search-plus"></i></button></td>
+							<td class="text-center"><button class="btn btn-principal-outline btn-sm"><i class="fas fa-file-download"></i></button></td>
+						</tr>
+						<tr>
+							<td class="text-center">RPS</td>
+							<td>04082320336778</td>
+							<td class="text-center">R$ 519,34</td>
+							<td class="text-center">04/06/2020</td>
+							<td class="text-center"><button class="btn btn-principal-outline btn-sm"><i class="fas fa-search-plus"></i></button></td>
+							<td class="text-center"><button class="btn btn-principal-outline btn-sm"><i class="fas fa-file-download"></i></button></td>
+						</tr>
+
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fas fa-times"></i> Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIM MODAL NOTAS FISCAIS-->
+	
+	
+	
+	<script type="text/javascript">
+		$(window).on('load',function(){
+			//$('#ModalNotasFiscais').modal('show');
+		});
+	</script>
+	
+</body>
+</html>

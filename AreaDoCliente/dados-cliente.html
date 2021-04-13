@@ -1,0 +1,532 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Área do cliente Mastermaq </title>
+	<meta name="description" content="Padrões da área do cliente Mastermaq">
+	<meta name="author" content="Leandro Eustáquio SI - Mastermaq">
+
+	<!--ESTILOS-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css"> 
+	<link rel="stylesheet" href="assets/css/all.min.css"> 	
+	<!--FIM ESTILOS-->
+
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script SRC="assets/JS/bootstrap.min.js"></script>
+	<!--FIM JQUERY-->
+
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand p-0" href="#">
+				<img src="assets/img/logo-mmq.png" width="35" class="d-inline-block align-middle" alt="" loading="lazy">
+				Área <strong>do cliente</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+				<form class="col-6">
+					<select class="form-control mr-sm-0 cliente-selecionado">
+						<option>522195 - MAXCOR INDUSTRIA DE ETIQUETAS LTDA</option>
+						<option>121325 - TOMAZ CONTABILIDADE EIRELI</option>
+					</select>
+				</form>
+				<ul class="navbar-nav ml-auto content-end pr-4 pt-1">
+					<li class="nav-item active mr-lg-2" title="Ajuda do Cadu"  onclick="$('.destaque').show()">
+						<button class="btn btn-secundario"><i class="fas fa-question-circle"></i> Cadu</button>
+					</li>
+					<li class="nav-item mr-lg-2" title="Notificações importantes para você">
+						<button class="btn btn-principal" disabled><i class="fas fa-exclamation-triangle"></i> <small>0</small></button>
+					</li>
+					<li class="nav-item dropdown perfil">
+						<!--SEM FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="far fa-user"></i>
+						</a>
+						<!--FIM SEM FOTO-->
+						<!--FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto com-foto hide" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxJT_RLIY7HFPGg80dMCJt9nlafYiCEHnxRg&usqp=CAU');background-size:cover;">
+							
+						</a>
+						<!--FIM FOTO-->
+						
+					
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <p class="vermelho mb-0 pr-1 pl-1 text-center" href="#"><Strong>Matheus Rocha Martins</strong></p>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#"><strong>Acessar passaporte</strong></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>	
+	<div class="container-fluid">
+		<div class="row">
+			<!--MENU LATERAL-->
+			<aside class="col-xl-2 col-lg-2 col-md-12 col-12 p-0 sidebar">
+				<div class="menu-lateral sidebar-sticky">
+					<ul class="list-unstyled">
+						<li>
+							<a href="">
+								<img src="assets/img/menu-home.png" class="icone-normal"> 
+								<img src="assets/img/menu-home-ativo.png" class="icone-ativo"> Início
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="assets/img/menu-financeiro.png" class="icone-normal"> 
+								<img src="assets/img/menu-financeiro-ativo.png" class="icone-ativo"> Financeiro
+							</a>
+						</li>
+						<li>
+							<a href="" class="ativo">
+								<img src="assets/img/menu-informacoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-informacoes-ativo.png" class="icone-ativo"> Dados do cliente
+							</a>
+						</li>
+						<li>
+							<a href=""   class="">
+								<img src="assets/img/menu-atendimento-servicos.png" class="icone-normal"> 
+								<img src="assets/img/menu-atendimento-servicos-ativo.png" class="icone-ativo"> Sistemas e serviços
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-capacitacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-capacitacao-ativo.png" class="icone-ativo"> Capacitação
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-implantacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-implantacao-ativo.png" class="icone-ativo"> Implantação
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="assets/img/menu-sugestoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-sugestoes-ativo.png" class="icone-ativo"> Painel de sugestões
+							</a>
+						</li>
+						
+					</ul>
+				</div>	
+			</aside>
+			<!--FIM MENU LATERAL-->
+			<!--CONTEUDO-->
+			<section class="col-xs-10 col-lg-10 col-md-12 col-sm-12 col-12 ml-sm-auto meio">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12  col-sm-12 col-12">
+						<!--Sistemas e Serviços-->
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<h2>Dados do cliente</h2>		
+							</div>
+				
+							<div class="caixa-conteudo-descricao hmn100">
+								<nav>
+									<div class="nav nav-tabs aba" id="nav-tab" role="tablist">
+										<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#cadastro" role="tab" aria-controls="cadastro" aria-selected="true">Cadastro</a>
+										<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#contratos" role="tab" aria-controls="contratos" aria-selected="false">Contratos</a>
+									</div>
+								</nav>
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade show active" id="cadastro" role="tabpanel" aria-labelledby="nav-home-tab">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pl-0">	
+													<div class="accordion">
+														<div class="card">
+															<div class="card-header" id="headingOne" style="    background-color: rgb(249 249 249);padding:.25rem;">
+															  <h2 class="mb-0">
+																<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#informacoes-principais" aria-expanded="true" aria-controls="collapseOne">
+																	<strong>Informacões principais</strong>
+																</button>
+															  </h2>
+															</div>
+															<div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+																<div class="card-body">
+																	<div class="caixa-subconteudo">
+																		<table class="table tabela1">
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Código do cliente:</strong></td>
+																				<td class="text-left">107030</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Código do cliente:</strong></td>
+																				<td class="text-left">MASTERMAQ SOFTWARES LTDA.</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>CNPJ:</strong></td>
+																				<td class="text-left">41858275000148</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Atividade principal:</strong></td>
+																				<td class="text-left">6203-1/00 - Desenvolvimento e licenciamento de programas de computador não-customizáveis</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Natureza jurídica:</strong></td>
+																				<td class="text-left">2062 - Sociedade Empresária Limitada</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Nome fantasia:</strong></td>
+																				<td class="text-left">MASTERMAQ SOFTWARES</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Nome responsável:</strong></td>
+																				<td class="text-left">
+																					Teste Mastermaq Leandro
+																					<input type="text" class="form-control">	
+																				</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Nome licenciamento:</strong></td>
+																				<td class="text-left">
+																					MASTERMAQ USO SISTEMAS INTERNOS
+																					<input type="text" class="form-control">	
+																				</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Inscrição estadual:</strong></td>
+																				<td class="text-left">
+																					0623110040017<br>
+																					<input type="text" class="form-control">	
+																				</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Inscrição municipal:</strong></td>
+																				<td class="text-left">
+																					03951090016
+																					<div class="form-row align-items-center">
+																						<div class="col-auto">
+																							<input type="text" class="form-control">																	
+																						</div>	
+																						<div class="col-auto">
+																							 <div class="form-check mb-6">
+																								<input class="form-check-input" type="checkbox" id=""> Isento
+																							</div>	
+																						</div>
+																					</div>	
+																				</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Retenção ISS:</strong></td>
+																				<td class="text-left">
+																					Não Reter
+																					<select class="form-control">
+																						<option>Não reter</option>
+																						<option>Reter</option>
+																					</select>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Retenção federal:</strong></td>
+																				<td class="text-left">
+																					Não
+																					<select class="form-control">
+																						<option>Não reter</option>
+																						<option>Reter</option>
+																					</select>
+																				</td>
+																			</tr>
+																		</table>	
+																	</div>
+																	<hr>		
+																	<p class="text-right">
+																		<button class="btn btn-excluir btn-sm"><i class="fas fa-times"></i> Cancelar</button>
+																		<button class="btn btn-principal btn-sm"><i class="fas fa-edit"></i> Editar dados</button>
+																		<button class="btn btn-principal btn-sm"><i class="fas fa-check"></i> Salvar</button>
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="card">
+															<div class="card-header" id="headingTwo" style="background-color: rgb(249 249 249);padding:.25rem;">
+															  <h2 class="mb-0">
+																<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#endereco" aria-expanded="false" aria-controls="collapseTwo">
+																  <strong>Endereço cadastrado</strong>
+																</button>
+															  </h2>
+															</div>
+															<div id="endereco" class="collapse" aria-labelledby="headingTwo">
+																<div class="card-body">
+																	<div class="caixa-subconteudo">
+																		<table class="table tabela1">
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Logradouro:</strong></td>
+																				<td class="text-left">R RIO DE JANEIRO</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Complemento:</strong></td>
+																				<td class="text-left"></td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Bairro:</strong></td>
+																				<td class="text-left">Lourdes</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Cep:</strong></td>
+																				<td class="text-left">30160042</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>Cidade:</strong></td>
+																				<td class="text-left">Belo Horizonte</td>
+																			</tr>
+																			<tr>
+																				<td width="25%" class="text-right"><strong>UF:</strong></td>
+																				<td class="text-left">MG</td>
+																			</tr>
+																		</table>	
+																	</div>
+																	<hr>		
+																	<p class="text-right">
+																		<button class="btn btn-excluir btn-sm"><i class="fas fa-times"></i> Cancelar</button>
+																		<button class="btn btn-principal btn-sm"><i class="fas fa-edit"></i> Editar dados</button>
+																		<button class="btn btn-principal btn-sm"><i class="fas fa-check"></i> Salvar</button>
+																	</p>
+																</div>
+															</div>
+														</div>
+											
+													</div>											
+												</div>
+											</div>
+										</div>							
+									</div>
+									<div class="tab-pane fade" id="contratos" role="tabpanel" aria-labelledby="nav-profile-tab">
+										<p>Seus contratos com a Mastermaq e os respectivos anexos:</p>
+										<div class="accordion">
+											<div class="card">
+												<div class="card-header"  style="background-color: rgb(249 249 249);padding:.25rem;">
+													<h2 class="mb-0">
+														<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#contrato-atestado" aria-expanded="false" aria-controls="collapseTwo">
+															<strong>Atestado</strong>
+														</button>
+													</h2>
+												</div>
+												<div id="contrato-atestado" class="collapse in show" aria-labelledby="headingTwo">
+													<div class="card-body">
+														<div class="table-responsive-xl">
+															<table class="table tabela1 table-xl">
+																<tbody>
+																	<tr>
+																		<th width="75%">Contrato</th>
+																		<th></th>
+																	</tr>
+																	<tr>
+																		<td>Atestado tÃ©cnico NG Ponto versÃ£o 3.0         </td>
+																		<td class="text-right">
+																			<button class="btn btn-principal-outline btn-sm" title="Visualizar contrato"><i class="fas fa-search-plus"></i> Visualizar</button>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>								
+														</div>
+														<hr>
+														<p class="text-right"><button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#contrato-atestado"><i class="fas fa-times"></i> Fechar</button></p>
+													</div>
+												</div>	
+											</div>
+											<div class="card">
+												<div class="card-header" style="background-color: rgb(249 249 249);padding:.25rem;">
+													<h2 class="mb-0">
+														<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#contrato-compra" aria-expanded="false" aria-controls="collapseTwo">
+															<strong>Compra</strong>
+														</button>
+													</h2>
+												</div>
+												<div id="contrato-compra" class="collapse" aria-labelledby="headingTwo">
+													<div class="card-body">
+														<div class="table-responsive-xl">
+															<table class="table tabela1 table-xl">
+																<tbody>
+																	<tr>
+																		<th width="45%">Contrato</th>
+																		<th width="25%" class="text-center">Tipo de venda</th>
+																		<th width="15%" class="text-center">Data</th>
+																		<th></th>
+																	</tr>
+																	<tr>
+																		<td>Processo de Venda 173328		</td>
+																		<td class="text-center">Aluguel</td>
+																		<td class="text-center">3/2020</td>
+																		<td class="text-right">
+																			<button class="btn btn-principal-outline btn-sm" title="Visualizar contrato"><i class="fas fa-search-plus"></i> Visualizar</button>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Processo de Venda 173328		</td>
+																		<td class="text-center">Aluguel</td>
+																		<td class="text-center">3/2020</td>
+																		<td class="text-right">
+																			<button class="btn btn-principal-outline btn-sm" title="Visualizar contrato"><i class="fas fa-search-plus"></i> Visualizar</button>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>								
+														</div>
+														<hr>
+														<p class="text-right"><button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#contrato-compra"><i class="fas fa-times"></i> Fechar</button></p>
+													</div>
+												</div>	
+											</div>
+											<div class="card">
+												<div class="card-header"  style="background-color: rgb(249 249 249);padding:.25rem;">
+													<h2 class="mb-0">
+														<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#contrato-aditivo" aria-expanded="false" aria-controls="collapseTwo">
+															<strong>Aditivo</strong>
+														</button>
+													</h2>
+												</div>
+												<div id="contrato-aditivo" class="collapse" aria-labelledby="headingTwo">
+													<div class="card-body">
+														<div class="table-responsive-xl">
+															<table class="table tabela1 table-xl">
+																<tbody>
+																	<tr>
+																		<th width="75%">Contrato</th>
+																		<th></th>
+																	</tr>
+																	<tr>
+																		<td>TERMO DE CONTRATO MASTERFIT (MMQ-BR)</td>
+																		<td class="text-right">
+																			<button class="btn btn-principal-outline btn-sm" title="Visualizar contrato"><i class="fas fa-search-plus"></i> Visualizar</button>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>								
+														</div>
+														<hr>
+														<p class="text-right"><button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#contrato-aditivo"><i class="fas fa-times"></i> Fechar</button></p>
+													</div>
+												</div>	
+											</div>
+											
+											<div class="card">
+												<div class="card-header"  style="background-color: rgb(249 249 249);padding:.25rem;">
+													<h2 class="mb-0">
+														<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#contrato-termo" aria-expanded="false" aria-controls="collapseTwo">
+															<strong>Termo de contrato</strong>
+														</button>
+													</h2>
+												</div>
+												<div id="contrato-termo" class="collapse" aria-labelledby="headingTwo">
+													<div class="card-body">
+														<div class="table-responsive-xl">
+															<table class="table tabela1 table-xl">
+																<tbody>
+																	<tr>
+																		<th width="75%">Contrato</th>
+																		<th></th>
+																	</tr>
+																	<tr>
+																		<td>TERMO DE CONTRATO MASTERFIT (MMQ-BR)</td>
+																		<td class="text-right">
+																			<button class="btn btn-principal-outline btn-sm" title="Visualizar contrato"><i class="fas fa-search-plus"></i> Visualizar</button>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>								
+														</div>
+														<hr>
+														<p class="text-right"><button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#contrato-termo"><i class="fas fa-times"></i> Fechar</button></p>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						<!--Fim Sistemas e Serviços-->
+					</div>	
+				</div>
+			</section>	
+			<!--FIM CONTEUDO-->
+		</div>	
+	</div>
+	<!--RODAPÉ-->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2 col-sm-12"></div>
+				<div class="col-xl-10 col-lg-10 col-sm-12">
+					<p class="text-center mb-1"><img src="assets/img/logo-mmq-cinza.png"></p>
+					<p class="text-center">© 2020 - Mastermaq Software | <a href="">Termos de Uso e Políticas de Privacidade</a></p>
+				</div>
+			</div>	
+		</div>
+	</footer>	
+	<!--FIM RODAPÉ---->
+	
+	<!--DESTAQUE-->
+	<div class="destaque">
+		<button class="btn btn-sm btn-default" title="Fechar" style="float:right;margin-right:5px;" onclick="$('.destaque').hide()"><i class="fas fa-times"></i></button>
+		<div class="destaque-cabecalho text-center">
+			<img src="http://centralajuda.mastermaq.com.br/assets/img/logo-cadu.png">
+		</div>
+		<div class="destaque-balao">
+			<p>Olá, no CADU você encontra materiais de apoio, solicita e acompanha atendimentos para serviços e sistemas da Mastermaq.</p>
+			<p><strong>Você está na área de sistemas e serviços, selecione abaixo como podemos te ajudar:</strong></p>
+		</div>
+		<div class="destaque-balao-ponta"></div>
+		<!--Conteudo-->
+		<div class="destaque-conteudo">
+			<form>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+					<label class="form-check-label" for="exampleRadios1">
+						Item 1
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+					<label class="form-check-label" for="exampleRadios1">
+						Item 1
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+					<label class="form-check-label" for="exampleRadios1">
+						Item 1
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+					<label class="form-check-label" for="exampleRadios1">
+						Item 1
+					</label>
+				</div>
+			</form>
+		</div>
+		<!--Fim Conteudo-->
+		<div class="destaque-rodape text-center">
+			<button class="btn btn-sm btn-default"  onclick="$('.destaque').hide()"><i class="fas fa-times"></i> Fechar</button>
+		</div>
+	</div>
+	<div class="cadu-materiais hide">
+		<div class="cadu-materiais-cabecalho"></div>
+	</div>
+	<!--FIM DESTAQUE-->
+	
+	<script type="text/javascript">
+		$(window).on('load',function(){
+			//$('#ModalNotasFiscais').modal('show');
+		});
+	</script>
+	<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Área do cliente Mastermaq </title>
+	<meta name="description" content="Padrões da área do cliente Mastermaq">
+	<meta name="author" content="Leandro Eustáquio SI - Mastermaq">
+
+	<!--ESTILOS-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css"> 
+	<link rel="stylesheet" href="assets/css/all.min.css"> 	
+	<!--FIM ESTILOS-->
+
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script SRC="assets/JS/bootstrap.min.js"></script>
+	<!--FIM JQUERY-->
+
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand p-0" href="#">
+				<img src="assets/img/logo-mmq.png" width="35" class="d-inline-block align-middle" alt="" loading="lazy">
+				Área <strong>do cliente</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+				<form class="col-6">
+					<select class="form-control mr-sm-0 cliente-selecionado">
+						<option>522195 - MAXCOR INDUSTRIA DE ETIQUETAS LTDA</option>
+						<option>121325 - TOMAZ CONTABILIDADE EIRELI</option>
+					</select>
+				</form>
+				<ul class="navbar-nav ml-auto content-end pr-4 pt-1">
+					<li class="nav-item active mr-lg-2" title="Ajuda do Cadu"  onclick="$('.destaque').show()">
+						<button class="btn btn-secundario"><i class="fas fa-question-circle"></i> Cadu</button>
+					</li>
+					<li class="nav-item mr-lg-2" title="Notificações importantes para você">
+						<button class="btn btn-principal" disabled><i class="fas fa-exclamation-triangle"></i> <small>0</small></button>
+					</li>
+					<li class="nav-item mr-lg-2" title="Notificações importantes para você">
+						<button class="btn btn-principal-outline"><i class="fas fa-shopping-cart"></i> <small>0</small></button>
+					</li>
+					<li class="nav-item dropdown perfil">
+						<!--SEM FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="far fa-user"></i>
+						</a>
+						<!--FIM SEM FOTO-->
+						<!--FOTO-->
+						<a class="nav-link dropdown-toggle perfil-foto com-foto hide" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxJT_RLIY7HFPGg80dMCJt9nlafYiCEHnxRg&usqp=CAU');background-size:cover;">
+							
+						</a>
+						<!--FIM FOTO-->
+						
+					
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <p class="vermelho mb-0 pr-1 pl-1 text-center" href="#"><Strong>Matheus Rocha Martins</strong></p>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#"><strong>Acessar passaporte</strong></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>	
+	<div class="container-fluid">
+		<div class="row">
+			<!--MENU LATERAL-->
+			<aside class="col-xl-2 col-lg-2 col-md-12 col-12 p-0 sidebar">
+				<div class="menu-lateral sidebar-sticky">
+					<ul class="list-unstyled">
+						<li>
+							<a href="">
+								<img src="assets/img/menu-home.png" class="icone-normal"> 
+								<img src="assets/img/menu-home-ativo.png" class="icone-ativo"> Início
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="assets/img/menu-financeiro.png" class="icone-normal"> 
+								<img src="assets/img/menu-financeiro-ativo.png" class="icone-ativo"> Financeiro
+							</a>
+						</li>
+						<li>
+							<a href="" class="">
+								<img src="assets/img/menu-informacoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-informacoes-ativo.png" class="icone-ativo"> Dados do cliente
+							</a>
+						</li>
+						<li>
+							<a href="" >
+								<img src="assets/img/menu-atendimento-servicos.png" class="icone-normal"> 
+								<img src="assets/img/menu-atendimento-servicos-ativo.png" class="icone-ativo"> Sistemas e serviços
+							</a>
+						</li>
+						<li>
+							<a href="sistemaseservicos.html" class="ativo">
+								<img src="assets/img/menu-loja.png" class="icone-normal"> 
+								<img src="assets/img/menu-loja-ativo.png" class="icone-ativo"> Loja
+							</a>
+						</li>
+						<li>
+							<a href="" class="hide">
+								<img src="assets/img/menu-capacitacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-capacitacao-ativo.png" class="icone-ativo"> Capacitação
+							</a>
+						</li>
+						<li>
+							<a href="" class="hide">
+								<img src="assets/img/menu-implantacao.png" class="icone-normal"> 
+								<img src="assets/img/menu-implantacao-ativo.png" class="icone-ativo"> Implantação
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="assets/img/menu-sugestoes.png" class="icone-normal"> 
+								<img src="assets/img/menu-sugestoes-ativo.png" class="icone-ativo"> Painel de sugestões
+							</a>
+						</li>
+						
+					</ul>
+				</div>	
+			</aside>
+			<!--FIM MENU LATERAL-->
+			<!--CONTEUDO-->
+			<section class="col-xs-10 col-lg-10 col-md-12 col-sm-12 col-12 ml-sm-auto meio">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12  col-sm-12 col-12">
+						<!--Vitrine Sistemas e Serviços-->
+						<div class="caixa-conteudo">
+							<div class="caixa-conteudo-titulo">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 pl-0">	
+											<h2>Finalizar contratação</h2>
+										</div>
+										<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 text-right pr-0">	
+											<button class="btn btn-default btn-sm" style="margin-top: 6px;" onclick="goBack()"><i class="fas fa-arrow-left"></i> Voltar</button>
+										</div>
+									</div>
+								</div>			
+							</div><br>
+							<div class="caixa-conteudo-descricao" style="min-height:100vh;">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 p-0">
+											<table class="table tabela1 tabela-produto-checkout" cellpadding="0" cellspacing="0">
+												<tr>
+													<th colspan="2">Itens selecionados</th>
+												</tr>
+											</table>	
+											<!--Produto-->
+											<table class="table tabela1 tabela-produto-checkout" cellpadding="0" cellspacing="0">
+												<tr>
+													<td width="80%">
+														<h3><strong>IaaS TI - Pacote Fit</strong></h3>
+													</td>
+													<td class="text-right">
+											
+													</td>
+												</tr>
+												<tr>
+													<td colspan="2">
+														<label><Strong>Configure o seu pacote</strong></label>
+														<form>
+														<div class="row">
+															<div class="col">
+																Qtd de estações <i class="fas fa-info-circle"></i>
+																<select class="form-control">
+																	<option>Selecione...</option>
+																</select>
+															</div>
+															<div class="col">
+																Qtd de servidores <i class="fas fa-info-circle"></i>
+																<select class="form-control">
+																	<option>Selecione...</option>
+																</select>
+															</div>
+														  </div>
+														</form>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="2">
+														<p><strong>Valor da mensalidade:</strong> R$0,<small>00</small> <a href="" data-toggle="collapse" data-target="#produto-lista-1">[Detalhes]</a></p>
+														<ul class="list-unstyled produto-pacote-lista collapse" id="produto-lista-1">
+															<li><strong>Requisitos mínimos:</strong> - </li>
+															<li><strong>Qtd de serviços:</strong> 16 </li>
+															<li><strong>Valor por computador:</strong> Gratuito </li>
+															<li><strong>Valor por servidor:</strong> Gratuito </li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="2">
+														<strong>O pacote ficará disponível para o cliente <i class="fas fa-info-circle"></i></strong>
+														<select class="form-control">
+															<option>Selecione...</option>
+														</select>
+													</td>
+												</tr>
+											</table>
+											<!--Fim produto-->
+										</div>
+										<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+											<div class="caixa-arrendondada" style="min-height:50px;height:auto!important;">
+												<p class="text-center" style="font-size:18px;"><strong>Adesão:</strong> R$ 0,<small>00</small></p>
+												<p></p>
+												<hr>
+												<p class="text-center" style="font-size:18px;"><strong>Mensalidade:</strong> R$ 0,<small>00</small></p>
+												<hr>
+												<p class="text-center"><button class="btn btn-principal" data-toggle="modal" data-target="#ModalConfirmacaoPagamento"><i class="fas fa-arrow-right"></i>  Avançar</button></p>
+											</div>
+										</div>
+		
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!--Vitrine Sistemas e Serviços-->
+					</div>
+				</div>
+			</section>	
+			<!--FIM CONTEUDO-->
+		</div>	
+	</div>
+	<!--RODAPÉ-->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2 col-sm-12"></div>
+				<div class="col-xl-10 col-lg-10 col-sm-12">
+					<p class="text-center mb-1"><img src="assets/img/logo-mmq-cinza.png"></p>
+					<p class="text-center">© 2020 - Mastermaq Software | <a href="">Termos de Uso e Políticas de Privacidade</a></p>
+				</div>
+			</div>	
+		</div>
+	</footer>	
+	<!--FIM RODAPÉ---->
+	
+	<!--MODAL CONFIRMAR CONTRATACAO-->
+	<div class="modal fade" id="ModalConfirmacaoPagamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Contratação</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body etapa1">
+					<h3><strong></strong></h3>
+					<div class="accordion">
+						<div class="card">
+							<div class="card-header" id="headingOne" style="background-color: rgb(249 249 249);padding:.25rem;">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#informacoes" aria-expanded="true" aria-controls="collapseOne">
+									<strong>Informações do seu pacote</strong>
+								</button>
+							  </h2>
+							</div>
+							<div id="informacoes" class="collapse  show" aria-labelledby="headingOne">
+								<div class="card-body">
+									<div class="caixa-subconteudo">
+											<h3>IaaS TI - Pacote Fit</h3>
+											<p>	0 estações / 0 servidores /  16 serviços</p>
+											<p><strong>Cliente:</strong> 0000 - Nome do cliente</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion">
+							<div class="card">
+								<div class="card-header" id="headingOne" style="background-color: rgb(249 249 249);padding:.25rem;">
+								  <h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#contrato" aria-expanded="true" aria-controls="collapseOne">
+										<strong>Contrato</strong>
+									</button>
+								  </h2>
+								</div>
+								<div id="contrato" class="collapse  show" aria-labelledby="headingOne">
+									<div class="card-body">
+										<div class="caixa-subconteudo">
+											<p>Role o contrato até o fim para aceitar.</p>
+											<div class="contrato-caixa">
+												<iframe src="http://areadocliente.mastermaq.com.br/politicas/uso-politicas-privacidade.htm" width="100%" height="100%"></iframe>
+											</div>
+											<label class="checkbox-inline" for="checkboxes-0">
+												<input type="checkbox" name="checkboxes" id="checkboxes-0" value="1" data-toggle="collapse" data-target="#pagamento">
+												Eu li e concordo os termos do contrato.
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingTwo" style="background-color: rgb(249 249 249);padding:.25rem;">
+								  <h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#pagamento" aria-expanded="false" aria-controls="collapseTwo">
+									  <strong>Pagamento</strong>
+									</button>
+								  </h2>
+								</div>
+								<div id="pagamento" class="collapse" aria-labelledby="headingTwo">
+									<div class="card-body">
+										<div class="caixa-subconteudo">
+											<h3>Adesão</h3>
+											<p><strong>Valor:</strong> R$ 0,<small>00</small></p>
+											<p>Selecione a forma de pagamento:</p>
+											<!--Forma de pagamento-->
+											<label class="radio-inline mr-3" for="radios-0">
+												<input type="radio" name="radios" id="radios-0" value="1"  checked="checked">
+												Boleto
+											</label>
+											<label class="radio-inline" for="radios-0">
+												<input type="radio" name="radios" id="radios-0" value="1">
+												Cartão de crédito
+											</label>
+											<!--Fim Forma de pagamento-->
+											<!--Boleto-->
+											<div class="pagamento-boleto">
+												<p>1x no boleto, com vencimento para o dia 
+													<select class="form-control form-control-sm form-inline" style="width:10%;display: inline-block;">
+														<option>5</option>
+													</select>.
+												</p>
+												<p><i class="fas fa-info-circle"></i> O acesso ao pacote contratado será liberado após o pagamento do boleto, no prazo de 3 dias úteis.</p>
+											</div>	
+											<!--Fim Boleto-->
+											<!--Boleto-->
+											<div class="pagamento-boleto hide">
+												<p>Formulário pagseguro ou pagar me</p>
+												<p><i class="fas fa-info-circle"></i> O acesso ao pacote contratado será liberado imediatamente após a confirmação de pagamento.</p>
+											</div>	
+											<!--Fim Boleto-->
+										</div>
+										<hr>	
+										<div class="caixa-subconteudo">
+											<h3>Mensalidade</h3>
+											<p><strong>Valor:</strong>  R$0,<small>00</small> / <strong>Forma de pagamento:</strong> Boleto bancário</p>
+											<p>Fidelidade de 12 meses.</p>
+											<p>O vencimento dos boletos é para todo dia
+												<select class="form-control form-control-sm form-inline" style="width:10%;display: inline-block;">
+													<option>5</option>
+												</select>.
+											</p>
+										</div>
+										<hr>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body etapa2" style="display:none;">
+					<p style="font-size:56px;color:#53b371;" class="text-center mb-1"><i class="far fa-check-circle"></i></p>
+					<p class="text-center"><strong>Contratação realizada com sucesso.</strong></p>
+					<p class="text-center">Foi enviado uma e-mail para [[EmailPrincipalPassaporte]], com detalhes da contratação e o boleto de adesão.</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-excluir btn-sm" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
+					<button type="button" class="btn btn-principal btn-sm" onclick="$('.etapa1').hide();$('.etapa2').show();$(this).prev().hide();$(this).hide();$(this).next().show()"><i class="fas fa-check"></i> Finalizar contratação</button>
+					<button class="btn btn-default btn-sm" style="display:none;" data-dismiss="modal"><i class="fas fa-times"></i> Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--FIM MODAL CONFIRMAR CONTRATACAO-->
+
+	
+	
+	
+	<script type="text/javascript">
+		$(window).on('load',function(){
+			//$('#ModalConfirmacaoPagamento').modal('show');
+		});
+	</script>
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+	
+</body>
+</html>
