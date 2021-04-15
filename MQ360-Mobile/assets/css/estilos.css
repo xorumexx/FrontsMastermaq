@@ -29,16 +29,39 @@ header{
 
 h1,h2,h3,h4,h5{
 	font-weight:bold;
+	letter-spacing:3px;
 }
 
 label{
 	font-weight:bold;
 }
 
+.icon-input{
+	position: absolute;
+    left: 90%;
+    top: 12%;
+    opacity: 0.5;
+}
+
 /*######### FIM BASE #########*/
 
 
 /*######### COMPONENTES #########*/
+
+/*Caixa*/
+.caixa{
+	padding-top:2rem;
+}
+.caixa-selecao-inbox{
+	border-top:1px solid #DDDDDD;
+	border-bottom:1px solid #DDDDDD;
+	padding:1rem 1rem;
+	margin-bottom:1rem;
+}
+
+
+
+/*Fim Caixa*/
 
 
 /*Botões*/
@@ -140,7 +163,7 @@ label{
 	background-color:#fff;
 	position:fixed;
 	top:0;
-	display:;
+	display:none;
 }
 
 /*Filtros avançados*/

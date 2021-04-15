@@ -46,6 +46,32 @@
 	</div>
 </header>
 
+
+<!--HOME-->
+<div class="caixa sombra">
+	<h3 class="azul text-center">Meus chamados</h3><br>
+	<div class="caixa-selecao-inbox">
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<label class="input-group-text" for="inputGroupSelect01">Inbox</label>
+			</div>
+			<select class="custom-select" id="inputGroupSelect01">
+				<option selected>Selecione...</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
+		</div>
+
+		<div class="input-group" style="position:relative;">
+			<input type="text" class="form-control" placeholder="Código do chamado">
+			<span class="icon-input"><i class="fas fa-search"></i></span>
+		</div>
+	</div>
+</div>
+
+<!--FIM HOME-->
+
 <!--NOTIFICAÇÕES-->
 <div class="notificacoes">
 	<p class="text-right"><button class="btn btn-azul btn-sm"><i class="fas fa-times"></i></button></p>
@@ -74,6 +100,7 @@
 	</div>
 </div>
 <!--FIM NOTIFICAÇÕES-->
+<!--FILTROS-->
 <div class="filtros">
 	<p class="text-right pr-2 pt-2"><button class="btn btn-azul btn-sm"><i class="fas fa-times"></i></button></p>
 	<h2 class="text-center azul pb-3"><i class="fas fa-bell"></i> Filtros</h2>
@@ -97,7 +124,24 @@
 					</div>
 					<div class="form-group">
 						<label>Período</label>
-						<input type="text" class="form-control">
+						<div class="row">
+							<div class="col-6 pr-0">	
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<label class="input-group-text">De</label>
+									</div>
+									<input type="text" class="form-control">
+								</div>
+							</div>	
+							<div class="col-6 pl-0">	
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<label class="input-group-text">à</label>
+									</div>
+									<input type="text" class="form-control">
+								</div>
+							</div>	
+						</div>		
 					</div>					
 				</form>
 			</div>
@@ -109,8 +153,6 @@
 		<button class="btn btn-laranja btn-sm"><i class="fas fa-filter"></i> Filtrar</button>
 	</div>
 </div>	
-<!--FILTROS-->
-
 <!--FIM FILTROS-->
 
 
