@@ -38,9 +38,9 @@ label{
 
 .icon-input{
 	position: absolute;
-    left: 90%;
-    top: 12%;
+    top: 15%;
     opacity: 0.5;
+    left: 92%;	
 }
 
 /*######### FIM BASE #########*/
@@ -59,7 +59,13 @@ label{
 	margin-bottom:1rem;
 }
 
-
+.total-chamados span{
+	border-bottom: 7px solid #71B6C8;
+    width: 63px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /*Fim Caixa*/
 
