@@ -52,6 +52,13 @@ label{
 .caixa{
 	padding-top:2rem;
 }
+
+.caixa.sombra{
+-webkit-box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.27);
+-moz-box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.27);
+box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.27);
+}
+
 .caixa-selecao-inbox{
 	border-top:1px solid #DDDDDD;
 	border-bottom:1px solid #DDDDDD;
@@ -61,13 +68,59 @@ label{
 
 .total-chamados span{
 	border-bottom: 7px solid #71B6C8;
-    width: 63px;
+    width: 210px;
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
 }
 
 /*Fim Caixa*/
+
+/*Chamado*/
+.chamados{
+	padding:10px 16px;
+}
+
+.chamado{
+	width:100%;
+	height:200px;
+	border:1px solid #ddd;
+	-webkit-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
+-moz-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
+box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
+	font-size:14px;
+	margin-bottom:1.5rem;
+}
+
+.chamado-cabecalho{
+	padding:1.5rem 1.5rem;
+	border-bottom:1px solid #ddd;
+}
+
+.chamado-numero{
+	background-color:#394A4E;
+	padding:.5rem;
+	border-radius:15px;
+	color:#fff;
+	font-weight:bold;
+	font-size:12px;
+	letter-spacing:1px;
+}
+
+.chamado-cliente{
+	font-size:16px;
+}
+
+.chamado-corpo{
+	padding:.8rem 1.5rem;
+}
+
+.chamado-corpo p{
+	margin-bottom:.5rem;
+	line-height:16px;
+}
+
+/*Fim Chamado*/
 
 
 /*Botões*/
@@ -83,10 +136,12 @@ label{
 .btn-laranja{
 	background-color:#F89508;
 	color:#fff;
+	border:1px solid #F89508;
 }
 
 .btn-laranja:hover{
 	background-color:#F89508;
+	color:#fff!important;
 }
 
 /*Fim Botões*/
@@ -170,6 +225,20 @@ label{
 	position:fixed;
 	top:0;
 	display:none;
+}
+
+.filtro-tag{
+	color: #fff;
+    background-color: #696969;
+    padding: .5rem .8rem .5rem .5rem;
+	color:#fff;
+	font-size:12px;
+	border-radius:50px;
+}
+
+.filtros-selecionados .filtro-tag{
+	display:inline-block;
+	margin-bottom:.5rem;
 }
 
 /*Filtros avançados*/

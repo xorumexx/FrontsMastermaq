@@ -33,7 +33,7 @@
 			</div>
 			<div class="col-6 text-right menu-topo">
 				<a href="" class="notificacao-icone">
-					<i class="fas fa-search"></i>
+					<i class="fas fa-filter"></i>
 				</a>
 				<a href="" class="notificacao-icone ativo">
 					<i class="fas fa-bell"></i> <span>5</span>
@@ -60,15 +60,70 @@
 				<option value="1">One</option>
 				<option value="2">Two</option>
 				<option value="3">Three</option>
-			</select>
+			</select>			
 		</div>
-
 		<div class="input-group" style="position:relative;">
 			<input type="text" class="form-control form-icon" placeholder="Código do chamado">
 			<span class="icon-input"><i class="fas fa-search"></i></span>
 		</div>
+		<div class="filtros-selecionados mt-3">
+			<p><strong>Filtros selecionados</strong></p>
+			<span class="filtro-tag"><strong>Status:</strong> Em aberto, Concluído <i class="fas fa-times pl-1"></i></span><br>
+			<span class="filtro-tag"><strong>Período:</strong> de 00/00/00 à 00/00/00 <i class="fas fa-times pl-1"></i></span>
+		</div><br>
+		<p class="text-center">
+		<button class="btn-outline-danger btn btn-sm mr-1"><i class="fas fa-times"></i> Limpar</button>
+		<button class="btn-laranja btn btn-sm"><i class="fas fa-filter"></i> Filtros avançados</button>
+		</p>
 	</div>
 	<div class="total-chamados text-center"><span>Total de chamados: 122</span></div>
+</div>
+
+<div class="caixa">
+	<!--Chamados-->
+	<div class="chamados">
+		<!--Chamado-->
+		<div class="chamado">
+			<div class="chamado-cabecalho">
+				<div class="row">
+					<div class="col-3 p-0">
+						<span class="chamado-numero">1213232</span>
+					</div>
+					<div class="col-9 p-0 chamado-cliente">
+						<strong>10305 - Revex industrial e merca...</strong>
+					</div>
+				</div>	
+			</div>
+			<div class="chamado-corpo">
+				<p><strong>Status:</strong> Em atendimento</p>
+				<p><strong>Inbox:</strong> Nome da inbox</p>
+				<p><strong>Data de abertura:</strong> 00/00/0000 às 00:00</p>
+				<p><strong>Última interação:</strong> 00/00/0000 às 00:00</p>
+			</div>
+		</div>	
+		<!--fim Chamado-->
+		<!--Chamado-->
+		<div class="chamado">
+			<div class="chamado-cabecalho">
+				<div class="row">
+					<div class="col-3 p-0">
+						<span class="chamado-numero">1213232</span>
+					</div>
+					<div class="col-9 p-0 chamado-cliente">
+						<strong>10305 - Revex industrial e merca...</strong>
+					</div>
+				</div>	
+			</div>
+			<div class="chamado-corpo">
+				<p><strong>Status:</strong> Em atendimento</p>
+				<p><strong>Inbox:</strong> Nome da inbox</p>
+				<p><strong>Data de abertura:</strong> 00/00/0000 às 00:00</p>
+				<p><strong>Última interação:</strong> 00/00/0000 às 00:00</p>
+			</div>
+		</div>	
+		<!--fim Chamado-->
+	</div>
+	<!--Fim chamados-->
 </div>
 
 <!--FIM HOME-->
