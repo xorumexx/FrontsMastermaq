@@ -83,7 +83,7 @@ box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.27);
 
 .chamado{
 	width:100%;
-	height:200px;
+	height:270px;
 	border:1px solid #ddd;
 	-webkit-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
 -moz-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
@@ -100,7 +100,7 @@ box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
 .chamado-numero{
 	background-color:#394A4E;
 	padding:.5rem;
-	border-radius:15px;
+	border-radius:10px;
 	color:#fff;
 	font-weight:bold;
 	font-size:12px;
@@ -112,7 +112,8 @@ box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
 }
 
 .chamado-corpo{
-	padding:.8rem 1.5rem;
+	padding:.5rem 1.5rem;
+	border-bottom:1px solid #ddd;
 }
 
 .chamado-corpo p{
@@ -120,10 +121,47 @@ box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
 	line-height:16px;
 }
 
+.chamado-rodape{
+	padding:1.5rem 1.5rem;
+	text-align:right;
+}
+
 /*Fim Chamado*/
 
 
 /*Botões*/
+.botao-flutuante{
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	width:48px;
+	height:48px;
+}
+
+.btn{
+	padding: .235rem 1.5rem!important;
+}
+
+.btn-circular{
+	border-radius:100%;
+	width:48px;
+	height:48px;
+	padding: 0!important;
+	font-size:32px;
+	line-height: 0;	
+}
+
+.botao-flutuante .btn-circular{
+-webkit-box-shadow: 0px 0px 14px -5px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 14px -5px rgba(0,0,0,1);
+box-shadow: 0px 0px 14px -5px rgba(0,0,0,1);
+}
+
+.btn-branco{
+	background-color:#fff;
+	color:#67B2C4;
+}
+
 .btn-azul{
 	background-color:#67B2C4;
 	color:#fff;
@@ -143,6 +181,12 @@ box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
 	background-color:#F89508;
 	color:#fff!important;
 }
+
+.btn-outline{
+	border:1px solid #707070;
+	color:#707070;
+}
+
 
 /*Fim Botões*/
 
@@ -243,6 +287,26 @@ box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
 
 /*Filtros avançados*/
 
+/*Interações*/
+.interacoes{
+	width:100vw;
+	height:100vh;
+	background-color:rgba(55,152,175,0.9);
+	position:fixed;
+	z-index:5000;
+	top:0;
+}
+
+.interacoes-lista{
+	width:80%;
+	height:50vh;
+	background-color:red;
+	right:0;
+	position:absolute;
+	bottom:75px;
+}
+
+/*Fim interações*/
 
 /*Barra Ferramentas*/
 .barra-ferramentas{
