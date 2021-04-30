@@ -8,6 +8,15 @@ Revisado em:
 
 /*BASE*/
 
+.bootbox .modal-header{
+	display:none!important;
+}
+
+.bootbox  .modal-body{
+	font-size:16px!important;
+padding: 1.5rem;
+}
+
 html{
 	max-width: 100%;
 	overflow-x: hidden;
@@ -23,6 +32,17 @@ body{
     overflow-x: hidden;
 	/*opacity: 0;*/
    /*transition: opacity .5s;*/
+}
+
+.carregando{
+	width: 100vw;
+    height: 100vh;
+    /*background-color: rgb(0 0 0 / 86%);*/
+	background-color: rgb(255 255 255 / 83%);
+    position: fixed;
+    z-index: 9999;
+	text-align:center;
+	color:#fff;
 }
 
 @media (min-width: 960px) and (max-width:1210px) {	
@@ -125,6 +145,11 @@ body{
 
 }
 
+
+.conteudo.interno{
+	
+}
+
 section.conteudo, .conversao-conteudo .container-fluid, .conteudo-conversao .container-fluid, .fechamento-home .container-fluid, .rodape-menus .container-fluid, .rodape-creditos .container-fluid, section.conversao .container-fluid{
 	max-width:1980px!important;
 	margin:0 auto;
@@ -166,7 +191,7 @@ header{
 }
 
 header .navbar{
-	max-width:1980px!important;
+	max-width:1168px!important;
 	margin:0 auto;
 }
 
@@ -221,6 +246,17 @@ header .dropdown-menu {
 	border-radius:0!important;
 	padding: .5rem 0 0 0;
 }
+
+header .dropdown-menu span{
+	color:#fff;
+	cursor:pointer;
+}
+
+header .dropdown-menu span:hover{
+	color:#fff;
+	cursor:pointer;
+}
+
 
 header .dropdown-item{
 	border-bottom:1px solid #3a3939;
@@ -297,25 +333,21 @@ header .dropdown:hover>.dropdown-menu {
 .btn{
 	border-radius:5px!important;
 	padding:.5rem 1rem;
-	border:2px solid;
-	transition: 0.3s;
-	color:#fff!important;
+	border:1px solid;
+	transition: 0.3s
 }
 
 .btn-vermelho{
 	background-color:#F50D30;
 	border-color:#F50D30;
+	border:1px solid #F50D30;
+		color:#fff!important;
 }
 
 .btn-vermelho:hover{
 	background-color:#9e0018;
-	border:2px solid #9e0018;
-}
-
-
-.btn-menor{
-	padding: .2rem .9rem;
-    font-size: 12px;
+	border:1px solid #9e0018;
+		color:#fff!important;
 }
 
 .btn-outline-branco{
@@ -670,11 +702,10 @@ header .dropdown:hover>.dropdown-menu {
 	width:85%;
 	background-color:#F9F9F9;
 	min-height:100px;
-	top:15%;
+	margin:-70px auto 0 auto;
 	border:1px solid #EBEBEB;
 	padding:10px 15px 20px 15px;
-	right:0;
-	margin-bottom:1.5rem;	
+	
 }
 
 .evento-sidebar p{
@@ -689,21 +720,33 @@ header .dropdown:hover>.dropdown-menu {
 
 /*Banner*/
 
-.banner-interno{
-	width:100%;
-	height:300px;
-	background-color:#000;
-	margin-top:94px;
-	padding-top:35px;
+.banner-carroussel{
+	padding-top: 40px!important;
+    background-color: #000!important;
+}
+
+.banner-home .slide-item {
+    width: 100%;
+    height: 350px;
+    background-size: contain;
+    background-position: 0;
+    background-repeat: no-repeat;
 }
 
 .capa{
 	width:1128px;
 	height:350px;
-	background-color:#ddd;
+	background-color:#000;
 	margin:0 auto;
+	color:#fff;
+	padding-top:75px;
 }
 
+.capa h2{
+	color:#fff;
+	text-align:center;
+}	
+	
 .banner-home{
 	top: 16%;
 }
@@ -711,13 +754,6 @@ header .dropdown:hover>.dropdown-menu {
 .contato .banner-home .slide-item{
     height:450px;
 	background-size:auto;
-}
-
-.banner-home .slide-item{
-	width:100%;
-	height:450px;
-	background-size:cover;
-	background-position:0 -5%;
 }
 
 .banner-home .carousel-indicators{
@@ -748,22 +784,25 @@ header .dropdown:hover>.dropdown-menu {
 	width: 537px;
 }
 
-.banner-home .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 0%;
-    left: 7%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-	width: 650px;
-    height: 94%;
-	zoom: 0.9;
-	padding-left:1%;
+.banner-home .carousel-caption.banner-principal {
+	display:none!important;
 }
 
+.banner-home .carousel-caption {
+    /* position: absolute; */
+    /* right: 15%; */
+    /* bottom: 0%; */
+    /* left: 7%; */
+    z-index: 10;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    color: #fff;
+    text-align: center;
+    height: 344px;
+    width: 850px;
+    zoom: 0.9;
+    /* padding-left:1%; */
+}
 .carousel-caption img{
 	margin-bottom:50px;
 }
@@ -1426,7 +1465,7 @@ header .dropdown:hover>.dropdown-menu {
 
 .fade
 {
-     opacity:0.5;
+     opacity:1;
 }
 .fade:hover
 {

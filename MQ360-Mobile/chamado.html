@@ -25,11 +25,18 @@
 </head>
 <body>
 <div class="botao-flutuante" style="bottom:9%;"><button class="btn btn-azul btn-circular"><i class="fas fa-plus"></i></button></div>
-<div class="barra-abas">
-	<ul class="nav-tabs">
-		<li><i class="fas fa-home"></i></li>
-		<li class="active" data-toggle="tab" data-target="#informacoes"><i class="fas fa-info-circle"></i> Informações</li>
-		<li data-toggle="tab" data-target="#historico"><i class="fas fa-rss"></i> Histórico</li>
+<div class="barra-abas">	
+	<ul class="nav nav-tabs justify-content-center" role="tablist">
+		<li class="nav-item">
+			
+			<a class="nav-link"><i class="fas fa-home"></i></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="#informacoes" role="tab" data-toggle="tab"><i class="fas fa-info-circle"></i> Informações</a></a>
+		</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#historico" role="tab" data-toggle="tab"><i class="fas fa-rss"></i> Histórico</a>
+		</li>
 	</ul>
 </div>
 <header>
@@ -55,55 +62,101 @@
 
 
 <!--NOVO CHAMADO-->
-<div class="tab-content" id="nav-tabContent">
- <div class="tab-pane fade show active" id="informacoes" role="tabpanel" aria-labelledby="nav-home-tab">
+
 <div class="caixa sombra">
-	<h3 class="azul text-center">Chamado: <span>376535</span></h3><br>
+	<h4 class="azul text-center pb-4">Chamado: <span>376535</span></h4>
 </div>
 
 <div class="caixa">
-	<div class="chamado-form">
-		<h4 class="azul">Detalhes do chamado</h4><br>	
-		<div class="form-group">
-			<label>Cliente*</label>
-			<input type="text" class="form-control" placeholder="Digite o código do cliente">
-		</div>	
-		<div class="form-group">
-			<label>Contato*</label>
-			<input type="text" class="form-control" placeholder="Nome do contato">
+	
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane fade" id="informacoes">
+			<div class="chamado-conteudo-interno">
+				<h5 class="azul text-center">Detalhes do chamado</h5><br>	
+				<div class="form-group">
+					<label>Cliente*</label>
+					<input type="text" class="form-control" placeholder="Digite o código do cliente">
+				</div>	
+				<div class="form-group">
+					<label>Contato*</label>
+					<input type="text" class="form-control" placeholder="Nome do contato">
+				</div>
+				<div class="form-group">
+					<label>Telefone*</label>
+					<input type="text" class="form-control" placeholder="(xx) xxxx-xxxx">
+				</div>
+				<div class="form-group">
+					<label>Telefone*</label>
+					<input type="text" class="form-control" placeholder="Endereço de e-mail">
+				</div>	
+				<div class="form-group">
+					<label>Inbox*</label>
+					<input type="text" class="form-control" placeholder="Endereço de e-mail">
+				</div>		
+				<div class="form-group">
+					<label>Assunto*</label>
+					<input type="text" class="form-control" placeholder="Informe o assunto">
+				</div>	
+				<div class="form-group">
+					<label>Descrição*</label>
+					<textarea class="form-control" placeholder="Informe a descrição" rows="7" placeholder="Informe a descrição"></textarea>
+				</div><br>
+				<div class="form-group text-right pb-2">		
+					<button class="btn btn-danger mr-2"><i class="fas fa-times"></i> Cancelar</button>
+					<button class="btn btn-laranja"><i class="fas fa-check"></i> Salvar</button>
+				</div>
+			</div>
 		</div>
-		<div class="form-group">
-			<label>Telefone*</label>
-			<input type="text" class="form-control" placeholder="(xx) xxxx-xxxx">
-		</div>
-		<div class="form-group">
-			<label>Telefone*</label>
-			<input type="text" class="form-control" placeholder="Endereço de e-mail">
-		</div>	
-		<div class="form-group">
-			<label>Inbox*</label>
-			<input type="text" class="form-control" placeholder="Endereço de e-mail">
-		</div>		
-		<div class="form-group">
-			<label>Assunto*</label>
-			<input type="text" class="form-control" placeholder="Informe o assunto">
-		</div>	
-		<div class="form-group">
-			<label>Descrição*</label>
-			<textarea class="form-control" placeholder="Informe a descrição" rows="7" placeholder="Informe a descrição"></textarea>
-		</div><br>
-		<div class="form-group text-right pb-2">		
-			<button class="btn btn-danger mr-2"><i class="fas fa-times"></i> Cancelar</button>
-			<button class="btn btn-laranja"><i class="fas fa-check"></i> Salvar</button>
+		<div role="tabpanel" class="tab-pane fade  in show active" id="historico">
+			<div class="chamado-conteudo-interno">
+				<h5 class="azul text-center">Histórico de interações <span class="btn-titulo"><i class="fas fa-search"></i></span></h5><br>	
+				
+				<div class="chamado-comentario sombra">
+					<div class="chamado-comentario-cabecalho">
+						<div clas="container-fluid">
+							<div class="row">
+								<div class="col-6"><strong>Comentário</strong></div>
+								<div class="col-6 text-right"><strong>Origem:</strong> BO</div>
+							</div>
+						</div>	
+					</div>
+					<div class="chamado-comentario-registro">
+						<div class="chamado-comentario-pessoa-img"></div>
+						<div class="chamado-comentario-pessoa">
+							Eduardo Silva
+						</div>
+					</div>
+					<div class="chamado-comentario-descricao">
+					
+					</div>
+				</div>
+					<div class="chamado-comentario sombra">
+					<div class="chamado-comentario-cabecalho">
+					
+					</div>
+					<div class="chamado-comentario-registro">
+						<div class="chamado-comentario-pessoa-img">
+						
+						</div>
+						<div clas="chamado-comentario-pessoa">
+						
+						</div>
+					</div>
+					<div class="chamado-comentario-descricao">
+					
+					</div>
+				</div>
+				
+			</div>
 		</div>
 	</div>
-</div>
+
+	
+
 
 </div>
-<div class="tab-pane fade" id="historico" role="tabpanel" aria-labelledby="nav-profile-tab">
 
-ssssss
-</div>
+
 </div>
 <!--FIM NOVO CHAMADO-->
 

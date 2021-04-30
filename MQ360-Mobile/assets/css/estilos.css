@@ -55,7 +55,7 @@ h3 span{
 
 /*Caixa*/
 .caixa{
-	padding-top:2rem;
+	padding-top:1rem;
 }
 
 .caixa.sombra{
@@ -131,7 +131,7 @@ box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
 	text-align:right;
 }
 
-.chamado-form{
+.chamado-conteudo-interno{
 	padding:10px 16px;
 }
 
@@ -142,6 +142,44 @@ box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.18);
 	background-color:#215967;
 	margin-top:20px;
 }
+
+.chamado-comentario{
+	width:100%;
+	min-height:100px;
+	background-color:#fff;
+	border:1px solid #ddd;
+	-webkit-box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.27);
+	-moz-box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.27);
+	box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.27);
+	margin-bottom:1.5rem;
+}
+
+
+.chamado-comentario-cabecalho{
+	background-color:#eeeeee;
+	padding:.5rem .5rem;
+	font-size:14px;
+}
+
+.chamado-comentario-registro{
+	padding:0.5rem;
+}
+
+.chamado-comentario-pessoa-img{
+	width:34px;
+	height:32px;
+	background-color:red;
+	float:left;
+}
+
+.chamado-comentario-pessoa{
+	float:left;
+	padding-top:4px;
+	padding-left:5px;
+}
+
+
+
 
 /*Fim Chamado*/
 
@@ -223,6 +261,10 @@ box-shadow: 0px 0px 14px -5px rgba(0,0,0,1);
 	color:#707070;
 }
 
+.btn-titulo{
+	color:#6B6B6B!important;
+	opacity:0.9!important;
+}
 
 /*Fim Botões*/
 
@@ -385,6 +427,7 @@ box-shadow: 0px 0px 14px -5px rgba(0,0,0,1);
 .barra-abas ul {
 	text-align:center;
 	padding:0;
+	border-bottom:0!important;
 }
 
 .barra-abas ul li{
@@ -392,15 +435,20 @@ box-shadow: 0px 0px 14px -5px rgba(0,0,0,1);
 	display:inline-block;
 	color:#fff;
 	font-size:16px;
-	padding-top:.8rem;
-	padding-left:1rem;
-	padding-right:1rem;
 }
 
-.barra-abas ul li.active{
-	background-color:#4D4D4D;
+.barra-abas ul li a{
+	color:#fff;
+	padding-top:.8rem;
+}
+
+.barra-abas ul li a.active{
+	background-color:#4D4D4D!important;
 	height:50px;
 	font-weight:bold;
+	border-radius:0;
+	color:#fff!important;
+	border:0;
 }
 
 .barra-abas ul li i{

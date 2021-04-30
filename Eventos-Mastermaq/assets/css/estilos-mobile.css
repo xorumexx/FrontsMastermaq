@@ -8,13 +8,24 @@ Revisado em:
 
 @media(max-width:768px){
 
+h5{
+	font-size: 17px;
+}
+
+.banner-carroussel {
+	padding-top:0!important;
+}	
+	
+.nav-tabs h2 {
+    font-size: 16px!important;
+}
 
 .erro h1{
 	font-size:75px!important;
 }
 
 .fixed-top {
-	z-index:9999;
+	z-index:1030;
 }
 .navbar-toggler{
     font-size: 26px;
@@ -26,6 +37,7 @@ Revisado em:
 
 header{
 	padding: 0.1rem 0 0.5rem 0;
+	zoom:0.8!important;
 }
 
 .navbar-nav{
@@ -51,97 +63,12 @@ header{
 	font-size:16px;
 }
 
-.empresas .banner-home .slide-item{
-	background-position: 21% 0!important;
-}
-
-.escritorios-contabeis .banner-home .slide-item{
-	background-position: 20% 62%!important;
-}
-
-.domo .banner-home .slide-item{
-	background-position: 50% 35%!important;
-}
-
-.domo .banner-home .carousel-caption img{
-	width:65%!important;
-}
-.domo .banner-home .carousel-caption h1{
-	width:85%;
-}
-
-.escritorios-contabeis .banner-home .carousel-caption,.ng .banner-home .carousel-caption, .evo .banner-home .carousel-caption{
-	height:94%;
-}
-
 .banner-home .carousel-caption h1 {
-    width: 100%!important;
-	font-size:40px;
+    width: 94%!important;
+	font-size:28px;
 	line-height:55px;
 }
 
-
-.evo .banner-home .slide-item {
-	background-position: 54% 35%!important;
-}
-
-.onboarding .banner-home .slide-item{
-	background-position: 70% 35%!important;
-}
-
-.suporte .banner-home .slide-item{
-	background-position: 70% 35%!important;
-}
-
-.capacitacao .banner-home .slide-item{
-	background-position: 45% 35%;
-}
-
-.exp-cliente .banner-home .slide-item{
-	background-position: 15% 35%!important;
-}
-
-.gestao-contas .banner-home .slide-item{
-	background-position: 85% 35%!important;
-}
-
-.iaas .banner-home .slide-item{
-	background-position: 55% 35%!important;
-}
-
-.iaas .banner-home img{
-	width:70%!important;
-}
-
-.micro.alpha .banner-home .carousel-caption {
-    left: 0%!important;
-    height: 0!important;
-    top: 40%!important;
-}
-
-
-.banner-home .carousel-caption img{
-	width:45%;
-	margin-top:10rem;
-	margin-left:0.5rem;
-}
-
-.medias-grandes-empresas .banner-home .slide-item{
-    background-position: 52% 35%!important;
-}
-
-.servicos .banner-home .slide-item{
-    background-position: 47% 35%!important;
-}
-
-
-.micro .banner-home .slide-item{
-	background-position: 69% 35%!important;
-}
-
-.sap .banner-home .slide-item{
-	background-position: 60% 35%!important;
-}
 
 .slide-conteudo{
 	width:100%!important;
@@ -151,18 +78,14 @@ header{
 }	
 
 .banner-home .carousel-caption {
-	top:40%;
 	bottom:inherit;
 	min-height:10%!important;
 	max-height:94%!important;
-	  top: 0;
+	top: 15%;
     bottom: 0;
-    min-height: 10%!important;
-    max-height: 94%!important;
+    height: 305px;
 	right:0!important;
 	left:0!important;
-	padding-left:1rem;
-	padding-right:1rem;
 	width:100%!important;
 }
 
@@ -171,6 +94,21 @@ header{
 	  filter: blur(1px);
   -webkit-filter: blur(1px);
   background-attachment:local!important;
+  background-image: url('../img/banner-evento-interno-m.png')!important;
+}
+
+.banner-home .carousel-caption.banner-principal {
+	display:block!important;
+	padding-top:50px!important;
+}
+
+.banner-home .carousel-caption.banner-principal h1 {
+	font-size: 40px;
+}
+
+
+.banner-home .carousel-caption.banner-principal small{
+	font-size:16px;
 }
 
 .banner-home h1 {
@@ -201,7 +139,7 @@ header{
 }
 	
 .conteudo,.conteudo.fim{
-	padding:2rem 1rem!important;
+	padding:2rem .5rem!important;
 }
 
 .conteudo-imagem-capa {
@@ -410,11 +348,69 @@ header{
 	bottom:1.5%;
 	right:10%;
 }
+
+.conteudo.home {
+    width: 100%;
+}
+
+.conteudo{
+	margin:45px auto!important;
+}
+
+.conteudo.interno{
+	margin:8px auto!important;
+}
+
 .conteudo-conversao p {
     width: 100%!important;
 }
 .contato-texto {
     font-size: 18px!important;
+}
+
+.evento-home {
+    width: 90%;
+	height:inherit;
+	max-height:auto;
+    min-height: 310px;
+    float: none;
+    padding: 0 12px;
+    /* margin-bottom: 41rem; */
+    display: block;
+    margin: 0 auto 2rem auto;
+
+}
+
+.banner-interno{
+	margin-top: 40px;
+}
+
+.evento-sidebar {
+    width: 100%;
+    background-color: #F9F9F9;
+    min-height: 100px;
+    top: 15%;
+    border: 1px solid #EBEBEB;
+    padding: 10px 15px 20px 15px;
+    right: 0;
+    position: relative;
+	margin-bottom: 80px;
+    margin-top: -55px;
+}
+
+.video-evento-bloqueado {
+    width: 100%;
+    height: 15%;
+}
+
+.mini-capa{
+	width: 100%;
+	height:inherit;
+    min-height: 150px;
+}
+
+.mini-capa img{
+	width:100%;
 }
 
 }
