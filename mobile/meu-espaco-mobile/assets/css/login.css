@@ -1,0 +1,62 @@
+/*
+	MEU ESPAÇO MOBILE
+*/
+
+html {
+    font-size: 62.5%!important; /* 1rem = 10px on default browser settings (16px) */
+}
+
+body{
+	 font-size: 16px!important; /* setting PX unit for browsers that dont support rem below */
+    font-size: 1.6rem!important; /* default to be used, browsers that dont support REM will use PX above */
+	background-color:#F5F5F5!important;
+	color:#86888B!important;
+}
+
+.form-control{
+	font-size:16px;
+}
+
+.btn{
+	font-size:16px;
+}
+
+h1,h2,h3{
+	letter-spacing:2px;
+}
+
+.app{
+	width:95px;
+	height:95px;
+	background-color:#fff;
+	margin:15px 15px;
+	border-radius:10px;
+	webkit-box-shadow: -1px 1px 14px -4px rgba(0,0,0,0.29);
+	-moz-box-shadow: -1px 1px 14px -4px rgba(0,0,0,0.29);
+	box-shadow: -1px 1px 14px -4px rgba(0,0,0,0.29);
+	font-weight:bold;
+	color:#CE2028;
+	border-bottom:3px solid #CE2028;
+}
+
+/*Login*/
+.login-campo{
+	margin-bottom:1.5rem;
+}
+
+.login .form-control{
+	width: 100%;
+    height: 40px;
+}
+
+header{
+	background-color:#fff;
+	border-bottom: 2px solid #e4e4e4;
+	padding:1rem 0;
+	
+}
+
+
+
+/*Fim Login*/
+
