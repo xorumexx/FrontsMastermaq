@@ -1,0 +1,417 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	<title>Área do cliente Mastermaq </title>
+	<meta name="description" content="Painel de Parceira - Mastermaq Software">
+	<meta name="author" content="Leandro Eustáquio SI - Mastermaq">
+
+	<!--ESTILOS-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css"> 
+	<link rel="stylesheet" href="assets/css/all.min.css"> 	
+	<!--FIM ESTILOS-->
+
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script SRC="assets/JS/bootstrap.min.js"></script>
+	<!--FIM JQUERY-->
+
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand p-0 m-0" href="#">
+				<img src="assets/img/logo-mmq.png" width="35" class="d-inline-block align-middle" alt="" loading="lazy">
+				Painel <strong>Parceria</strong>
+			</a>
+			<div class="titulo"><span>Quirius</span></div>
+			<button class="navbar-toggler btn-principal-outline mr-3" type="button" data-toggle="collapse" data-target=".sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
+
+			<ul class="navbar-nav ml-auto content-end pr-3 pt-1">
+				<li class="nav-item dropdown perfil">
+					<a class="nav-link dropdown-toggle perfil-foto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-cog"></i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="#ModalConfiguracoes" data-toggle="modal"><strong>Notificações</strong></a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="#"><strong>Sair</strong></a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>	
+	<section class="d-flex flex-column meio">
+		<div class="dashboard">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-12 col-12 p-0">
+						<div class="dashboard-card-geral pt-4">
+							<h1 class="text-center mb-1">12</h1>
+							<h3>Clientes</h3>
+							<hr>
+							<ul class="dashboard-lista list-unstyled">
+								<li><strong>0</strong> Ativos</li>
+								<li><strong>0</strong> Bloqueados</li>
+								<li><strong>0</strong> Cancelados</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-9 col-lg-9 col-md-12 col-12 pt-3">
+						<h2 class="text-center">Resumo</h2>
+						<form class="form-inline d-flex justify-content-center">
+							<div class="form-group mb-2">
+								<input type="text" class="form-contro form-control-sm" id="inputPassword2" value="00/00/0000">
+							</div>
+							<div class="form-group mx-sm-3 mb-2">
+								<input type="text" class="form-control form-control-sm" id="inputPassword2" value="00/00/0000">
+							</div>
+							<button type="submit" class="btn btn-default-branco btn-sm mb-2">Filtrar</button>
+						</form>
+						<div class="row">
+							<div class="col-xl-4 col-lg-4 col-md-12 col-12 pt-2">
+								<div class="dashboard-item-resumo ativo">
+									<span class="numero">2</span>
+									<span class="descricao">
+										Clientes <br><strong>Ativos</strong>
+									</span>
+									<div class="dashboard-item-resumo-rodape">
+										<i class="fas fa-exclamation-circle"></i> 1 ações pendentes
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-12 col-12 pt-2">
+								<div class="dashboard-item-resumo bloqueado">
+									<span class="numero">2</span>
+									<span class="descricao">
+										Clientes <br><strong>Bloqueados</strong>
+									</span>
+									<div class="dashboard-item-resumo-rodape sem-pendencia">
+										<i class="fas fa-exclamation-circle"></i> 0 ações pendentes
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-12 col-12 pt-2">
+								<div class="dashboard-item-resumo cancelado">
+									<span class="numero">2</span>
+									<span class="descricao">
+										Clientes <br><strong>Cancelados</strong>
+									</span>
+									<div class="dashboard-item-resumo-rodape sem-pendencia">
+										<i class="fas fa-exclamation-circle"></i>0 ações pendentes
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>	
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12">
+					<h2>Listagem dos clientes - <small>(9)</small></h2>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 text-right">
+					<button class="btn btn-default btn-sm mr-2"><i class="far fa-file-excel"></i> Exportar</button>
+				</div>
+			</div>
+			<!--Filtros-->
+			<form>
+				<div class="row mt-2 filtros pt-2 pb-5">
+					<div class="col-xl-12 col-lg-12 col-12">
+						<div class="row">
+							<div class="col-xl-4 col-lg-4 col-md-12 col-12">
+								<div class="form-group">
+									<label>Cliente</label>
+									<input type="text" class="form-control form-control-sm">
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-12 col-12">
+								<div class="form-group">
+									<label>Status</label>
+									<select class="form-control form-control-sm">
+										<option>Selecione</option>
+										<option>Ativo</option>
+										<option>Bloqueado</option>
+										<option>Cancelado</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xl-5 col-lg-5 col-md-12 col-12">
+								<div class="form-group">
+									<label>Pacote</label>
+									<select class="form-control form-control-sm">
+										<option>Selecione</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row filtros-avancados collapse">
+							<div class="col-xl-4 col-lg-4 col-md-12 col-12">
+								<div class="form-group">
+									<label>Cliente</label>
+									<input type="text" class="form-control form-control-sm">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-12 text-right">
+								<button class="btn btn-excluir mr-2 btn-sm">
+									<i class="fas fa-eraser"></i> Limpar filtros
+								</button>
+								<button class="btn btn-secundario-outline btn-sm" type="button" data-toggle="collapse" data-target=".filtros-avancados"><i class="fas fa-filter"></i> Filtros avançados</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<!--Fim Filtros-->
+			<div class="row">
+				<div class="col-12">
+					<div class="table-responsive-xl pt-3">
+						<table class="table tabela1 table-xl">
+							<tr>
+								<th width="35%">Cliente</th>
+								<th width="15%" class="text-center">Valor mensal</th>
+								<th width="15%" class="text-center">Status</th>
+								<th width="15%" class="text-center">Data da venda</th>
+								<th width="15%" class="text-right"></th>
+							</tr>
+							<!--Cliente-->
+							<tbody>
+								<tr>
+									<td class="cliente-link" title="Mais informações do cliente">12345 - Nome do cliente</td>
+									<td class="text-center">R$ 0,00</td>
+									<td class="text-center">
+										<i class="fas fa-exclamation-circle icone-pendencia"></i>
+										<span class="tag-status novo">Novo</span>
+										<span class="tag-status ativo">Ativo</span>
+										<span class="tag-status bloqueado hide">Bloqueado</span>
+										<span class="tag-status cancelado hide">Cancelado</span>
+									</td>
+									<td class="text-center">00/00/0000</td>
+									<td class="text-right">
+										<button class="btn btn-principal-outline btn-sm" title="Mais informações do cliente" data-toggle="collapse" data-target="#cliente1"><i class="fas fa-search-plus"></i></button>
+										<button class="btn btn-principal btn-sm btn-confirmar" title="Ativar cliente" data-target="#ModalAcao" data-toggle="modal"><i class="fas fa-check"></i> Confirmar</button>
+									</td>
+								</tr>
+								<tr class="cliente-detalhes collapse" id="cliente1">
+									<td colspan="10">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-xl-4 col-lg-4 col-md-12 col-12 p-0 cliente-detalhes-col1">
+													<p><strong><i class="fas fa-info"></i> Detalhes do cliente</strong></p>
+													<ul class="list-unstyled dados">
+														<!--Cliente PJ-->
+														<li><strong>CNPJ:</strong> 147664290001-07</li>
+														<!--Cliente PF-->
+														<li class="hide">CPF: 147664290001-07</li>
+														<li><strong>Sistema:</strong> Nome do sistema</li>
+														<li><strong>Pacote:</strong> descrição do pacote</li>
+														<li><strong>Cód. cliente anterior:</strong> -</li>
+														<li><strong>Data da última atualização:</strong> 00/00/0000</li>
+													</ul>
+												</div>
+												<div class="col-xl-8 col-lg-8 col-md-12 col-12">
+													<p><strong><i class="fas fa-check-double"></i> Histórico de ações</strong></p>
+													<div class="panel panel-primary">
+														<div class="panel-body scroll">
+															<ul class="chat">
+																<li>
+																	<div class="chat-body">
+																		<div class="header">
+																			<span class="chat-usuario"><strong class="primary-font">Quirius</strong></span> - 
+																			<small class="pull-right text-muted"> 00/00/000 - 13:05</small>
+																		</div>
+																		<p>
+																			<strong>Cancelamento do cliente confirmado.</strong>
+																		</p>
+																	</div>
+																</li>
+																<li>
+																	<div class="chat-body">
+																		<div class="header">
+																			<span class="chat-usuario"><strong class="primary-font">Mastermaq Software</strong></span> - 
+																			<small class="pull-right text-muted"> 00/00/000 - 13:00</small>
+																		</div>
+																		<p>
+																			<strong>Cancelamento do cliente realizado.</strong> Pendente confirmação do Parceiro [NomeDoParceiro]
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="container-fluid" style="    background-color: #e6e6e6;padding: 0.8rem 0.5rem;">
+											<div class="row">
+												<div class="col-12 text-right">
+													<button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#cliente1"><i class="fas fa-times"></i> Fechar</button>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<!--Fim Cliente-->	
+							
+							<!--Cliente-->
+							<tbody>
+								<tr class="pendencia">
+									<td class="cliente-link" title="Mais informações do cliente">12345 - Nome do cliente</td>
+									<td class="text-center">R$ 0,00</td>
+									<td class="text-center">
+										<i class="fas fa-exclamation-circle icone-pendencia"></i>
+										<span class="tag-status novo">Novo</span>
+										<span class="tag-status ativo">Ativo</span>
+										<span class="tag-status bloqueado hide">Bloqueado</span>
+										<span class="tag-status cancelado hide">Cancelado</span>
+									</td>
+									<td class="text-center">00/00/0000</td>
+									<td class="text-right">
+										<button class="btn btn-principal-outline btn-sm" title="Mais informações do cliente" data-toggle="collapse" data-target="#cliente2"><i class="fas fa-search-plus"></i></button>
+										<button class="btn btn-principal btn-sm btn-confirmar" title="Ativar cliente" data-target="#ModalAcao" data-toggle="modal"><i class="fas fa-check"></i> Confirmar</button>
+									</td>
+								</tr>
+								<tr class="cliente-detalhes collapse" id="cliente2">
+									<td colspan="10">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-xl-4 col-lg-4 col-md-12 col-12 p-0 cliente-detalhes-col1">
+													<p><strong><i class="fas fa-info"></i> Detalhes do cliente</strong></p>
+													<ul class="list-unstyled dados">
+														<!--Cliente PJ-->
+														<li><strong>CNPJ:</strong> 147664290001-07</li>
+														<!--Cliente PF-->
+														<li class="hide">CPF: 147664290001-07</li>
+														<li><strong>Sistema:</strong> Nome do sistema</li>
+														<li><strong>Pacote:</strong> descrição do pacote</li>
+														<li><strong>Cód. cliente anterior:</strong> -</li>
+														<li><strong>Data da última atualização:</strong> 00/00/0000</li>
+													</ul>
+												</div>
+												<div class="col-xl-8 col-lg-8 col-md-12 col-12">
+													<p><strong><i class="fas fa-check-double"></i> Histórico de ações</strong></p>
+													<div class="panel panel-primary">
+														<div class="panel-body scroll">
+															<ul class="chat">
+																<li>
+																	<div class="chat-body">
+																		<div class="header">
+																			<span class="chat-usuario"><strong class="primary-font">Quirius</strong></span> - 
+																			<small class="pull-right text-muted"> 00/00/000 - 13:05</small>
+																		</div>
+																		<p>
+																			<strong>Cancelamento do cliente confirmado.</strong>
+																		</p>
+																	</div>
+																</li>
+																<li>
+																	<div class="chat-body">
+																		<div class="header">
+																			<span class="chat-usuario"><strong class="primary-font">Mastermaq Software</strong></span> - 
+																			<small class="pull-right text-muted"> 00/00/000 - 13:00</small>
+																		</div>
+																		<p>
+																			<strong>Cancelamento do cliente realizado.</strong> Pendente confirmação do Parceiro [NomeDoParceiro]
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="container-fluid" style="    background-color: #e6e6e6;padding: 0.8rem 0.5rem;">
+											<div class="row">
+												<div class="col-12 text-right">
+													<button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#cliente1"><i class="fas fa-times"></i> Fechar</button>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<!--Fim Cliente-->		
+						</table>								
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--RODAPÉ-->
+	<footer class="footer mt-auto py-3">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-sm-12">
+					<p class="text-center mb-1"><img src="assets/img/logo-mmq-cinza.png"></p>
+					<p class="text-center">© 2020 - Mastermaq Software</p>
+				</div>
+			</div>	
+		</div>
+	</footer>
+	<!--FIM RODAPÉ---->
+	
+	<!--MODAL CONFIRMAÇÃO DE AÇÃO-->
+	<div class="modal fade" id="ModalConfiguracoes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Configurações</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h3><i class="far fa-envelope"></i> Notificações por e-mail</h3>
+					<p>Receba o resumo da semana.</p>
+					<p><strong>E-mails cadastrados</strong></p>
+					<form>
+						<table class="table tabela1">
+							<tbody>
+								<tr>
+									<td width="90%"><input type="text" class="form-control form-control-sm" id="staticEmail2" placeholder="emal@email.com.br ...."></td>
+									<td><button type="submit" class="btn btn-principal-outline btn-sm"><i class="fas fa-check"></i></button></td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+					<table class="table">
+						<tbody>
+							<tr>
+								<td colspan="2"><small>Nenhum endereço de e-mail cadastrado.</small></td>
+							</tr>
+							<tr>
+								<td width="90%">teste@teste.com</td>
+								<td><button class="btn btn-excluir btn-sm"><i class="fas fa-trash-alt"></i></button></td>
+							</tr>
+						</tbody>
+					</table>									
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-sm" data-dismiss="modal"><i class="fas fa-times"></i> Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIM MODAL CONFIRMAÇÃO DE AÇÃO-->
+	
+	<script type="text/javascript">
+		$(window).on('load',function(){
+			$('#ModalConfiguracoes').modal('show');
+		});
+	</script>
+</body>
+</html>

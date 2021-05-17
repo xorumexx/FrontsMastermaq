@@ -1,0 +1,451 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	<title>Clientes IaaS Backup | Mastermaq Software</title>
+	<meta name="description" content="Painel de clientes - IaaS Backup | Mastermaq Software">
+	<meta name="author" content="Leandro Eustáquio SI - Mastermaq">
+	
+	<link async rel="shortcut icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/disp/86652175634831.5c51f4eb212e1.jpg" type="image/jpg">
+	<link async rel="icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/disp/86652175634831.5c51f4eb212e1.jpg" type="image/jpg">
+	<!--ESTILOS-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css"> 
+	<link rel="stylesheet" href="assets/css/all.min.css"> 	
+	<!--FIM ESTILOS-->
+
+	<!--JQUERY-->
+	<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script SRC="assets/JS/bootstrap.min.js"></script>
+	<!--FIM JQUERY-->
+
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand p-0 m-0" href="#">
+				<img src="assets/img/logo-mmq.png" width="35" class="d-inline-block align-middle" alt="" loading="lazy">
+				Painel <strong>Clientes</strong>
+			</a>
+			<div class="titulo"><span>IaaS//Backup</span></div>
+	
+
+			<ul class="navbar-nav ml-auto content-end pr-3 pt-1">
+				<li>	
+					<button class="btn btn-principal btn-sm mr-3 mt-1" data-toggle="modal" data-target="#ModaLVincularTarefas"><i class="fas fa-link"></i> 10 tarefa(s) para vincular</butto>
+				</li>
+				<li class="nav-item dropdown perfil">
+					<a class="nav-link perfil-foto" role="button" data-toggle="modal" data-target="#ModaLAcessos" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-cog"  style="margin-left:0!important;" ></i>
+					</a>
+					<div class="dropdown-menu hide" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="#ModalConfiguracoes" data-toggle="modal"><strong>Notificações</strong></a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="#"><strong>Sair</strong></a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>	
+	<section class="d-flex flex-column meio" style="padding-top:6rem;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12">
+					<h2>Clientes - <small>(9)</small></h2>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 text-right">
+					<button class="btn btn-secundario btn-sm" type="button"><i class="far fa-file-excel"></i> Exportar</button>
+				</div>
+			</div>
+			<!--Filtros-->
+			<form class="filtros">
+				<div class="row mt-2 filtros pt-2 pb-5">
+					<div class="col-xl-12 col-lg-12 col-12">
+						<div class="row">
+							<div class="col-xl-5 col-lg-5 col-md-12 col-12">
+								<div class="form-group">
+									<label>Cliente</label>
+									<input type="text" class="form-control form-control-sm" placeholder="Nome, Código, CPF ou CNPJ">
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-12 col-12">
+								<div class="form-group">
+									<label>Status</label>
+									<select class="form-control form-control-sm">
+										<option>Selecione</option>
+										<option>Ativo</option>
+										<option>Bloqueado</option>
+										<option>Cancelado</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-12 col-12">
+								<div class="form-group">
+									<label>Cota</label>
+									<select class="form-control form-control-sm">
+										<option>Selecione</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row filtros-avancados collapse">
+							<div class="col-xl-4 col-lg-4 col-md-12 col-12">
+								<div class="form-group">
+									<label>Cliente</label>
+									<input type="text" class="form-control form-control-sm">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-12 text-right">
+								<button class="btn btn-excluir mr-2 btn-sm">
+									<i class="fas fa-eraser"></i> Limpar filtros
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<!--Fim Filtros-->
+			<div class="row">
+				<div class="col-12">
+					<div class="table-responsive-xl pt-3">
+						<table class="table tabela1 table-xl">
+							<tr>
+								<th width="40%">Cliente</th>
+								<th width="20%" class="text-center">Cota / Consumo</th>
+								<th width="15%" class="text-center">Tarefas</th>
+								<th width="15%" class="text-center">Status</th>
+								<th width="10%" class="text-right"></th>
+							</tr>
+							<!--Cliente-->
+							<tbody>
+								<tr class="pendencia">
+									<td class="cliente-link" title="Mais informações do cliente">12345 - Nome do cliente</td>
+									<td class="text-center"><i class="fas fa-exclamation-circle icone-pendencia"></i>  200 GB / 175 GB </td>
+									<td class="text-center">
+										<i class="fas fa-exclamation-circle icone-pendencia"></i> 2
+									</td>
+									<td class="text-center">
+										<span class="tag-status ativo">Ativo</span>
+										<span class="tag-status bloqueado hide">Suspenso</span>
+										<span class="tag-status cancelado hide">Cancelado</span>
+									</td>
+									<td class="text-right">
+										<button class="btn btn-principal-outline btn-sm" title="Mais informações do cliente" data-toggle="collapse" data-target="#cliente1"><i class="fas fa-search-plus"></i></button>
+									</td>
+								</tr>
+								<tr class="cliente-detalhes collapse" id="cliente1">
+									<td colspan="10"><br>
+										<div class="container-fluid">
+											<!--Alertas-->
+											<div class="alertas">
+												<div class="row mb-3">
+													<div class="col-12">
+														<div class="alert alert-warning" role="alert" style="background-color:#fffee4;padding:.5rem;">
+															<i class="fas fa-exclamation-circle" style="color:#ff8e09!important;"></i> Cliente possui boletos em aberto com mais de X dias. É preciso suspender as tarefas.
+														</div>
+														<div class="alert alert-warning" role="alert" style="background-color:#fffee4;padding:.5rem;">
+															<i class="fas fa-exclamation-circle" style="color:#ff8e09!important;"></i> Cliente possui boletos em aberto com mais de X dias. É preciso suspender as tarefas.
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--FIM Alertas-->
+
+											<div class="row">
+												<div class="col-12">
+													<h3>Tarefas</h3>
+												</div>
+											</div>	
+											<div class="row">
+												<div class="col-12">
+													<table class="table tabela-sub table-bordered">
+														<tr>
+															<th width="40%">Tafefa de backup</th>
+															<th width="20%" class="text-center">Host</th>
+															<th width="10%" class="text-center">IP</th>
+															<th width="15%" class="text-center">Discos</th>
+															<th></th>
+														</tr>
+														<tr class="pendencia">
+															<td>
+																<strong>Arquivos</strong> <span style="color:red;">[Suspenso]</span><br>
+																<small><strong>ID:</strong> 16045058455</small> / <i class="fas fa-exclamation-circle icone-pendencia" style="display: inline-block!important;"></i> Ocorreu um erro durante a execução da tarefa.
+															</td>
+															<td class="text-center">
+																<span class="offline" title="Servidor offline"></span>
+																<span class="online" title="Servidor online"></span>SERVIDOR<br>
+																<strong>SID:</strong> 7811545
+															</td>
+															<td class="text-center">
+																192.168.0.22		
+															</td>
+															<td class="text-center">
+																7.99 GB / 49.93 GB [395]
+															</td>
+															<td class="text-center">
+																<button class="btn btn-excluir btn-sm" title="Desvincular tarefa" data-toggle="modal" data-target="#ModaLDesvincularTarefas"><i class="fas fa-unlink"></i></button>
+																<button class="btn btn-secundario-outline btn-sm" title="Visualizar no Painel da platon"><i class="fas fa-external-link-alt"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<strong>Arquivos</strong> <span style="color:red;">[Suspenso]</span><br>
+																<small><strong>ID:</strong> 16045058455</small>
+															</td>
+															<td class="text-center">
+																<span class="offline" title="Servidor offline"></span>
+																<span class="online" title="Servidor online"></span>SERVIDOR<br>
+																<strong>SID:</strong> 7811545
+															</td>
+															<td class="text-center">
+																192.168.0.22		
+															</td>
+															<td class="text-center">
+																7.99 GB / 49.93 GB [395]
+															</td>
+															<td class="text-center">
+																<button class="btn btn-excluir btn-sm"  title="Desvincular tarefa" data-toggle="modal" data-target="#ModaLDesvincularTarefas"><i class="fas fa-unlink"></i></button>
+																<button class="btn btn-secundario-outline btn-sm" title="Visualizar no Painel da platon"><i class="fas fa-external-link-alt"></i></button>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="container-fluid" style="padding: 0.8rem 0.5rem;">
+											<div class="row">
+												<div class="col-12 text-right">
+													<button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#cliente1"><i class="fas fa-times"></i> Fechar</button>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<!--Fim Cliente-->	
+							
+							<!--Cliente-->
+							<tbody>
+								<tr>
+									<td class="cliente-link" title="Mais informações do cliente">12345 - Nome do cliente</td>
+									<td class="text-center">200 GB / 1 GB</td>
+									<td class="text-center">
+										<i class="fas fa-exclamation-circle icone-pendencia"></i> 2
+									</td>
+									<td class="text-center">
+										<span class="tag-status ativo">Ativo</span>
+										<span class="tag-status bloqueado hide">Suspenso</span>
+										<span class="tag-status cancelado hide">Cancelado</span>
+									</td>
+									<td class="text-right">
+										<button class="btn btn-principal-outline btn-sm" title="Mais informações do cliente" data-toggle="collapse" data-target="#cliente2"><i class="fas fa-search-plus"></i></button>
+									</td>
+								</tr>
+								<tr class="cliente-detalhes collapse" id="cliente2">
+									<td colspan="10"><br>
+										<!--Alertas-->
+											<div class="alertas hide">
+												<div class="row mb-3">
+													<div class="col-12">
+														<div class="alert alert-warning" role="alert" style="background-color:#fffee4;padding:.5rem;">
+															<i class="fas fa-exclamation-circle" style="color:#ff8e09!important;"></i> Cliente possui boletos em aberto com mais de X dias. É preciso suspender as tarefas.
+														</div>
+														<div class="alert alert-warning" role="alert" style="background-color:#fffee4;padding:.5rem;">
+															<i class="fas fa-exclamation-circle" style="color:#ff8e09!important;"></i> Cliente possui boletos em aberto com mais de X dias. É preciso suspender as tarefas.
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--FIM Alertas-->
+
+											<div class="row">
+												<div class="col-12">
+													<h3>Tarefas</h3>
+												</div>
+											</div>	
+											<div class="row">
+												<div class="col-12">
+													<table class="table tabela-sub table-bordered">
+														<tr>
+															<th width="40%">Tafefa de backup</th>
+															<th width="20%" class="text-center">Host</th>
+															<th width="10%" class="text-center">IP</th>
+															<th width="15%" class="text-center">Discos</th>
+															<th></th>
+														</tr>
+														<tr>
+															<td>
+																<strong>Arquivos</strong> <span style="color:red;">[Suspenso]</span><br>
+																<small><strong>ID:</strong> 16045058455</small>
+															</td>
+															<td class="text-center">
+																<span class="offline" title="Servidor offline"></span>
+																<span class="online" title="Servidor online"></span>SERVIDOR<br>
+																<strong>SID:</strong> 7811545
+															</td>
+															<td class="text-center">
+																192.168.0.22		
+															</td>
+															<td class="text-center">
+																7.99 GB / 49.93 GB [395]
+															</td>
+															<td class="text-center">
+																<button class="btn btn-excluir btn-sm" title="Desvincular tarefa" data-toggle="modal" data-target="#ModaLDesvincularTarefas"><i class="fas fa-unlink"></i></button>
+																<button class="btn btn-secundario-outline btn-sm" title="Visualizar no Painel da platon"><i class="fas fa-external-link-alt"></i></button>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<strong>Arquivos</strong> <span style="color:red;">[Suspenso]</span><br>
+																<small><strong>ID:</strong> 16045058455</small>
+															</td>
+															<td class="text-center">
+																<span class="offline" title="Servidor offline"></span>
+																<span class="online" title="Servidor online"></span>SERVIDOR<br>
+																<strong>SID:</strong> 7811545
+															</td>
+															<td class="text-center">
+																192.168.0.22		
+															</td>
+															<td class="text-center">
+																7.99 GB / 49.93 GB [395]
+															</td>
+															<td class="text-center">
+																<button class="btn btn-excluir btn-sm"  title="Desvincular tarefa" data-toggle="modal" data-target="#ModaLDesvincularTarefas"><i class="fas fa-unlink"></i></button>
+																<button class="btn btn-secundario-outline btn-sm" title="Visualizar no Painel da platon"><i class="fas fa-external-link-alt"></i></button>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="container-fluid" style="padding: 0.8rem 0.5rem;">
+											<div class="row">
+												<div class="col-12 text-right">
+													<button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#cliente1"><i class="fas fa-times"></i> Fechar</button>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<!--Fim Cliente-->		
+						</table>								
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--RODAPÉ-->
+	<footer class="footer mt-auto py-3">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-sm-12">
+					<p class="text-center mb-1"><img src="assets/img/logo-mmq-cinza.png"></p>
+					<p class="text-center"><small>© 2021 - Mastermaq Software</small></p>
+				</div>
+			</div>	
+		</div>
+	</footer>
+	<!--FIM RODAPÉ---->
+	
+	<!--MODAL ALERTA DESVINCULAR-->
+	<div class="modal fade" id="ModaLDesvincularTarefas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalCenterTitle">Desvincular tarefa</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+				Você tem certeza que deseja desvincular a tarefa <strong>[NomeTarefa]</strong> do cliente 12345 - Nome do cliente?
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-excluir" data-dismiss="modal">Não</button>
+				<button type="button" class="btn btn-principal">Sim</button>
+			</div>
+		</div>
+	  </div>
+	</div>
+	<!--FIM MODAL DESVINCULAR-->
+	
+	<!--MODAL VINCULAR TAREFAS-->
+	<div class="modal fade" id="ModaLVincularTarefas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Vincular tarefas</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Vincule as tarefas abaixo a um cliente que possua Iaas//Backup.</p>
+					<table class="table tabela1">
+						<tr>
+							<th width="40%">Tarefa</th>
+							<th width="40%">Ciente</th>
+							<th></th>
+						</tr>
+						<tbody>
+							<tr>
+								<td style="font-size:14px;"><strong>14053 - Ubirajara Brasil Teixeira (BancosNG)</strong><br>ID: 16045058455 </td>
+								<td>
+									<select class="form-control form-control-sm">
+										<option>Selecione</option>
+									</select>
+								</td>
+								<td class="text-right">
+									<button class="btn-secundario-outline btn-sm btn" title="Víncular ao cliente"><i class="fas fa-link"></i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>									
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-sm" data-dismiss="modal"><i class="fas fa-times"></i> Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIM MODAL VINCULAR TAREFAS-->
+	
+	<!--MODAL ACESSOS-->
+	<div class="modal fade" id="ModaLAcessos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Acessos Platon</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4><strong>Programas de Backup no cliente</strong></h4>
+					<p><strong>Usuário:</strong> mastermaq728<br>
+					<strong>Senha:</strong> E4uYwe8!61<br>
+					<strong>Link para baixar: </strong><a href="https://drive.platonic.cloud/s/T7CcoMDc3z4rk2Q?path=%2FWindows" target="blank">https://drive.platonic.cloud/s/T7CcoMDc3z4rk2Q?path=%2FWindows</a>	
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-sm" data-dismiss="modal"><i class="fas fa-times"></i> Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FIM MODAL ACESSOS-->
+	
+	
+	<script>
+		$('#ModaLAcessos').modal('show')
+	</script>
+</body>
+</html>
